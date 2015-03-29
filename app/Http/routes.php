@@ -11,9 +11,17 @@
 |
 */
 
+Route::get('map', 'AdminController@getStakeholderMap');
+
 Route::get('stakeholders', 'AdminController@getStakeholderPage');
 
 Route::get('initiatives', 'AdminController@getInitiativePage');
+
+Route::get('stakeholdersJSON', 'AdminController@getStakeholderJSON');
+
+Route::get('initiativesJSON/{stakeholder}', 'AdminController@getInitiativeJSON');
+
+Route::get('geocodesJSON/{country}', 'AdminController@getGeocodeJSON');
 
 Route::get('stakeholders/add', 'AdminController@addStakeholderPage');
 

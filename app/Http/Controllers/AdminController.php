@@ -2,10 +2,18 @@
 
 use App\Initiative;
 use App\Stakeholder;
+use App\Geocode;
 use Illuminate\Support\Facades\Input;
 
 class AdminController extends Controller {
 
+    function getStakeholderMap () {
+
+        $list = Stakeholder::all();
+
+        return view('mapview', ['list' => $list]);
+
+    }
 
     function getStakeholderPage () {
 
@@ -20,6 +28,30 @@ class AdminController extends Controller {
         $list = Initiative::all();
 
         return view('initiatives', ['list' => $list]);
+
+    }
+
+    function getStakeholderJSON () {
+
+        $list = Stakeholder::all();
+
+        return '{"results":' . $list . '}';
+
+    }
+
+    function getInitiativeJSON ($stakeholder) {
+
+        $list = Initiative::where('stakeholder', $stakeholder)->get();
+
+        return '{"results":' . $list . '}';
+
+    }
+
+    function getGeocodeJSON ($country) {
+
+        $list = Geocode::where('countryname', $country)->get();
+
+        return '{"results":' . $list . '}';
 
     }
 
