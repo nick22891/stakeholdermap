@@ -11,21 +11,13 @@
 |
 */
 
-Route::get('/', 'WelcomeController@index');
+Route::get('stakeholders', 'AdminController@getStakeholderPage');
 
-Route::get('home', 'HomeController@index');
+Route::get('initiatives', 'AdminController@getInitiativePage');
 
-Route::controllers([
-	'auth' => 'Auth\AuthController',
-	'password' => 'Auth\PasswordController',
-]);
+Route::get('stakeholders/add', 'AdminController@addStakeholderPage');
 
-Route::get('/stakeholders', 'AdminController@getStakeholderPage');
+Route::post('stakeholders/add', 'AdminController@processStakeholder');
 
-Route::get('/initiatives', 'AdminController@getInitiativePage');
-
-Route::get('/stakeholders/add', 'AdminController@addStakeholderPage');
-
-Route::get('/initiatives/add', 'AdminController@addInitiativePage');
-
+Route::get('initiatives/add', 'AdminController@addInitiativePage');
 

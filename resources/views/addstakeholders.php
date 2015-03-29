@@ -15,16 +15,6 @@
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
 
-        <script>
-
-            function addStakeholders () {
-
-
-
-            }
-
-        </script>
-
     </head>
 
     <body style="text-align: center;">
@@ -33,19 +23,21 @@
 
     <h1>Add Stakeholder</h1>
 
-    <form action="http://localhost/stakeholdermap/postStakeholder" method="post">
+    <form action="" method="POST">
 
-        Country : <input name="country"/><br><br>
+        <input type="hidden" name="_token" value="<?php echo(csrf_token()); ?>" />
 
-        Name : <input name="name"/><br><br>
+        Country : <input type="text" name="country"/><br><br>
 
-        Type : <input name="type"/><br><br>
+        Name : <input type="text" name="name"/><br><br>
 
-        Functional Area : <input name="functional_area"/><br><br>
+        Type : <input type="text" name="type"/><br><br>
 
-        Url : <input name="url"/><br><br>
+        Functional Area : <input type="text" name="functional_area"/><br><br>
 
-        <input type="submit" value="Add Stakeholder!" onclick="addStakeholder()"/>
+        Url : <input type="text" name="url"/><br><br>
+
+        <input type="submit" value="Add Stakeholder!"/>
 
     </form>
 
@@ -59,3 +51,5 @@
  * Date: 3/23/15
  * Time: 2:36 PM
  */
+
+
