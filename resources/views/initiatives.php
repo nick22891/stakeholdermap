@@ -20,7 +20,7 @@
 
 <br><br>
 
-<h1>Initiatives</h1>
+<h1>Initiatives (<a href="initiatives/add">Add</a>) </h1>
 
 <div ng-app="" ng-init='results=<?php echo ($list); ?>'>
 

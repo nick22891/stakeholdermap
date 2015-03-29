@@ -33,7 +33,7 @@ class AdminController extends Controller {
 
         $list = Initiative::all();
 
-        return view('initiatives', ['list' => $list]);
+        return view('addinitiatives');
 
     }
 
@@ -51,7 +51,27 @@ class AdminController extends Controller {
 
         $newstakeholder = Stakeholder::create(['name' => $name, 'type' => $type, 'functional_area' => $functional_area, 'url' => $url, 'country' => $country]);
 
-        return "User's Name is " . $newstakeholder->name . " " . $newstakeholder->type . " " . $newstakeholder->functional_area . " " . $newstakeholder->url . " " . $newstakeholder->country;
+        return "New Stakeholder Info : " . $newstakeholder->name . " " . $newstakeholder->type . " " . $newstakeholder->functional_area . " " . $newstakeholder->url . " " . $newstakeholder->country;
+
+    }
+
+    function processInitiative () {
+
+        $name = Input::get('name');
+
+        $initiative_type = Input::get('initiative_type');
+
+        $stakeholder = Input::get('stakeholder');
+
+        $initiative_url = Input::get('initiative_url');
+
+        $date = Input::get('date');
+
+        $country = Input::get('country');
+
+        $newinitiative = Initiative::create(['name' => $name, 'initiative_type' => $initiative_type, 'stakeholder' => $stakeholder, 'initiative_url' => $initiative_url, 'country' => $country, 'date' => $date]);
+
+        return "New Initiative Info : " . $newinitiative->name . " " . $newinitiative->initiative_type . " " . $newinitiative->stakeholder . " " . $newinitiative->initiative_url . " " . $newinitiative->country. " " . $newinitiative->date;
 
     }
 

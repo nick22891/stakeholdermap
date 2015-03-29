@@ -21,3 +21,5 @@ Route::post('stakeholders/add', 'AdminController@processStakeholder');
 
 Route::get('initiatives/add', 'AdminController@addInitiativePage');
 
+Route::post('initiatives/add', 'AdminController@processInitiative');
+

@@ -20,7 +20,7 @@
 
 <br><br>
 
-<h1>Stakeholders</h1>
+<h1>Stakeholders (<a href="stakeholders/add">Add</a>) </h1>
 
 <div ng-app="" ng-init='results=<?php echo ($list); ?>'>
 
