@@ -57,7 +57,9 @@ class AdminController extends Controller {
 
     function addStakeholderPage () {
 
-        return view('addstakeholders');
+        $list = Stakeholder::distinct()->select('country')->get();
+
+        return view('addstakeholders', ['listOfCountries' => $list]);
 
     }
 

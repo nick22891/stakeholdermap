@@ -23,11 +23,17 @@
 
     <h1>Add Stakeholder</h1>
 
+    <div ng-app="" ng-init='countries=<?php echo ($listOfCountries); ?>'>
+
     <form action="" method="POST">
 
-        <input type="hidden" name="_token" value="<?php echo(csrf_token()); ?>" />
+        Country : <select name="country">
 
-        Country : <input type="text" name="country"/><br><br>
+            <option ng-repeat="x in countries" value="{{ x.country }}">
+                {{ x.country }}
+            </option>
+
+        </select><!--<input type="text" name="country"/>--><br><br>
 
         Name : <input type="text" name="name"/><br><br>
 

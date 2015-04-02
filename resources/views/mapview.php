@@ -28,7 +28,7 @@
 
     <script>
 
-        var iconShade = "icons/Aliz.jpg";
+        var iconShade = "http://www.argentmac.com/devca/icons/Aliz.jpg";
 
         var preContent = "";
 
@@ -40,7 +40,7 @@
 
                 type: "GET",
 
-                url: "http://localhost/stakeholdermap/public/stakeholdersJSON",
+                url: "http://stakeholdermap.eu1.frbit.net/stakeholdersJSON",
 
                 dataType : "json",
 
@@ -84,7 +84,7 @@
 
                 type : "GET",
 
-                url: encodeURI("http://localhost/stakeholdermap/public/geocodesJSON/" + country),
+                url: encodeURI("http://stakeholdermap.eu1.frbit.net/geocodesJSON/" + country),
 
                 dataType : "json",
 
@@ -98,21 +98,21 @@
 
                     //var marker = L.marker([data.results[0].latitude, data.results[0].longitude]).addTo(map);
 
-                    iconShade = "icons/Aliz.png";
+                    iconShade = "http://www.argentmac.com/devca/icons/Aliz.png";
 
-                    if (type == "Bank/Investment/Consulting") iconShade = "icons/Emerald.png";
+                    if (type == "Bank/Investment/Consulting") iconShade = "http://www.argentmac.com/devca/icons/Emerald.png";
 
-                    if (type == "Government") iconShade = "icons/cloud.png";
+                    if (type == "Government") iconShade = "http://www.argentmac.com/devca/icons/cloud.png";
 
-                    if (type == "Education/Research") iconShade = "icons/wetasphalt.png";
+                    if (type == "Education/Research") iconShade = "http://www.argentmac.com/devca/icons/wetasphalt.png";
 
-                    if (type == "NGO") iconShade = "icons/sunflower.png";
+                    if (type == "NGO") iconShade = "http://www.argentmac.com/devca/icons/sunflower.png";
 
-                    if (type == "ICT Vendor") iconShade = "icons/Silver.png";
+                    if (type == "ICT Vendor") iconShade = "http://www.argentmac.com/devca/icons/Silver.png";
 
-                    if (type == "MNO/Telecommunications") iconShade = "icons/Pongrante.png";
+                    if (type == "MNO/Telecommunications") iconShade = "http://www.argentmac.com/devca/icons/Pongrante.png";
 
-                    if (type == "Media/Marketing") iconShade = "icons/Ametheyst.png";
+                    if (type == "Media/Marketing") iconShade = "http://www.argentmac.com/devca/icons/Ametheyst.png";
 
 
 
@@ -133,7 +133,7 @@
 
                                     type: "GET",
 
-                                    url: encodeURI("http://localhost/stakeholdermap/public/initiativesJSON/" + name),
+                                    url: encodeURI("http://stakeholdermap.eu1.frbit.net/initiativesJSON/" + name),
 
                                     dataType : "json",
 
@@ -143,7 +143,7 @@
 
                                             eventname = data.results[i].name;
 
-                                            preContent = "" + preContent + "<br>" + (i + 1) + ". " + eventname + "<br><br>Year : " + data.results[i].date + "<br><br>Url : " + data.results[i].initiative_url;
+                                            preContent = "" + preContent + "<br>" + (i + 1) + ". " + eventname + "<br><br>Year : " + data.results[i].date + "<br><br>Url : " + data.results[i].initiative_url + "<br>";
 
                                         }
 
@@ -456,7 +456,7 @@
 
         #map {
 
-            height: 720px;
+            height: 600px;
 
         }
 
@@ -720,7 +720,7 @@
 
 
 
-    var map = L.map('map').setView([18.06, -74.09], 5);
+    var map = L.map('map').setView([14.06, -74.09], 5);
     //https://a.tiles.mapbox.com/v4/nickjwill.lcnch31p/page.html?access_token=pk.eyJ1Ijoibmlja2p3aWxsIiwiYSI6Im4xQWFQeTQifQ.bwI5KQmy7z7kS9woXzbplw#6/31.625/40.463
     L.tileLayer('http://{s}.tiles.mapbox.com/v4/nickjwill.lcnc6kpo/{z}/{x}/{y}.png?access_token=pk.eyJ1Ijoibmlja2p3aWxsIiwiYSI6Im4xQWFQeTQifQ.bwI5KQmy7z7kS9woXzbplw', {
         attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
@@ -758,21 +758,21 @@
 
 </script>
 
-<br><b>Key : </b><br>
+<br><b><p style="display:inline;">Key : </p></b>
 
-<img src="icons/Emerald.png"/> Bank/Investment/Consulting&nbsp;
+<img src="http://www.argentmac.com/devca/icons/Emerald.png"/> Bank/Investment/Consulting&nbsp;
 
-<img src="icons/cloud.png"/> Government&nbsp;
+<img src="http://www.argentmac.com/devca/icons/cloud.png"/> Government&nbsp;
 
-<img src="icons/wetasphalt.png"/> Education/Research&nbsp;
+<img src="http://www.argentmac.com/devca/icons/wetasphalt.png"/> Education/Research&nbsp;
 
-<img src="icons/sunflower.png"/> NGO&nbsp;
+<img src="http://www.argentmac.com/devca/icons/sunflower.png"/> NGO&nbsp;
 
-<img src="icons/Silver.png"/> ICT Vendor&nbsp;
+<img src="http://www.argentmac.com/devca/icons/Silver.png"/> ICT Vendor&nbsp;
 
-<img src="icons/Pongrante.png"/> MNO/Telecommunications&nbsp;
+<img src="http://www.argentmac.com/devca/icons/Pongrante.png"/> MNO/Telecommunications&nbsp;
 
-<img src="icons/Ametheyst.png"/> Media/Marketing&nbsp;
+<img src="http://www.argentmac.com/devca/icons/Ametheyst.png"/> Media/Marketing&nbsp;
 
 </body>
 

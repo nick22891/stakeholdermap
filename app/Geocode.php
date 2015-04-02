@@ -11,6 +11,8 @@ class Geocode extends Model {
      */
     protected $table = 'geocodes';
 
+
+
     /**
      * The attributes that are mass assignable.
      *
