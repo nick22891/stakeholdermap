@@ -29,33 +29,35 @@
 
     <div ng-app="" ng-init='countries=<?php echo ($listOfCountries); ?>;types=<?php echo ($listOfTypes) ?>;'>
 
-    <form action="" method="POST">
+        <form action="" method="POST">
 
-        Country : <select name="country">
+            Country : <select name="country">
 
             <option ng-repeat="x in countries" value="{{ x.country }}">
                 {{ x.country }}
             </option>
 
-        </select><!--<input type="text" name="country"/>--><br><br>
+            </select><!--<input type="text" name="country"/>--><br><br>
 
-        Name : <input type="text" name="name"/><br><br>
+            Name : <input type="text" name="name"/><br><br>
 
-        Type : <select name="type">
+            Type : <select name="type">
 
             <option ng-repeat="x in types" value="{{ x.type }}">
                 {{ x.type }}
             </option>
 
-        </select><!--<input type="text" name="country"/>--><br><br>
+            </select><!--<input type="text" name="country"/>--><br><br>
 
-        Functional Area : <input type="text" name="functional_area"/><br><br>
+            Functional Area : <input type="text" name="functional_area"/><br><br>
 
-        Url : <input type="text" name="url"/><br><br>
+            Url : <input type="text" name="url"/><br><br>
 
-        <input type="submit" value="Add Stakeholder!"/>
+            <input type="submit" value="Add Stakeholder!"/>
 
-    </form>
+        </form>
+
+    </div>
 
     </body>
     </html>

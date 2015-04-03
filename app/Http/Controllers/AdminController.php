@@ -67,9 +67,13 @@ class AdminController extends Controller {
 
     function addInitiativePage () {
 
-        $list = Initiative::all();
+        $list = Initiative::distinct()->select('country')->get();
 
-        return view('addinitiatives');
+        $types_list = Initiative::distinct()->select('initiative_type')->get();
+
+        $stakeholders_list = Stakeholder::distinct()->select('name', 'id')->get();
+
+        return view('addinitiatives', ['listOfCountries' => $list, 'listOfTypes' => $types_list, 'listOfStakeholders' => $stakeholders_list]);
 
     }
 

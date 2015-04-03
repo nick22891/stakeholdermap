@@ -13,7 +13,33 @@
 
     <head>
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="http://www.argentmac.com/cdn/jquery.tokenize.css" />
         <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script type="text/javascript" src="http://www.argentmac.com/cdn/jquery.tokenize.js"></script>
+
+        <script>
+
+        $( document ).ready(function() {
+
+            $('select#tokenize option').removeAttr("selected");
+
+            $('#tokenize-leader').tokenize();
+
+            $('#tokenize-partner').tokenize();
+
+            $('#tokenize-sponsor').tokenize();
+
+            $('li.Token').remove();
+        });
+
+        </script>
+
+        <style>
+
+            .token-class { width: 500px }
+
+        </style>
 
     </head>
 
@@ -21,27 +47,69 @@
 
     <br><br>
 
+    <h3><a href="/initiatives"><-- Back to Initiative List</a></h3>
+
+    <br>
+
     <h1>Add Initiative</h1>
 
-    <form action="" method="POST">
+    <div ng-app="" ng-init='countries=<?php echo ($listOfCountries); ?>;types=<?php echo ($listOfTypes) ?>;stakeholders=<?php echo ($listOfStakeholders) ?>;'>
 
-        <input type="hidden" name="_token" value="<?php echo(csrf_token()); ?>" />
+        <form action="" method="POST">
 
-        Country : <input type="text" name="country"/><br><br>
+            <input type="hidden" name="_token" value="<?php echo(csrf_token()); ?>" />
 
-        Name : <input type="text" name="name"/><br><br>
+            Country : <select name="country">
 
-        Stakeholder : <input type="text" name="stakeholder"/><br><br>
+                <option ng-repeat="x in countries" value="{{ x.country }}">
+                    {{ x.country }}
+                </option>
 
-        Type : <input type="text" name="initiative_type"/><br><br>
+            </select><!--<input type="text" name="country"/>--><br><br>
 
-        Year : <input type="text" name="date"/><br><br>
+            Name : <input type="text" name="name"/><br><br>
 
-        Url : <input type="text" name="initiative_url"/><br><br>
+            Leader(s) : <i>(Start typing to see suggestions)</i><br><select id="tokenize-leader"  style="width:500px;" name="leaders" class="token-class">
 
-        <input type="submit" value="Add Stakeholder!"/>
+                <option ng-repeat="x in stakeholders" value="{{ x.id }}">
+                    {{ x.name }}
+                </option>
 
-    </form>
+            </select><!--<input type="text" name="country"/>--><br><br>
+
+            Partner(s) : <i>(Start typing to see suggestions)</i><br><select id="tokenize-partner"  style="width:500px;" name="partners" class="token-class">
+
+                <option ng-repeat="x in stakeholders" value="{{ x.id }}">
+                    {{ x.name }}
+                </option>
+
+            </select><!--<input type="text" name="country"/>--><br><br>
+
+            Sponsor(s) : <i>(Start typing to see suggestions)</i><br><select id="tokenize-sponsor"  style="width:500px;" name="sponsors" class="token-class">
+
+                <option ng-repeat="x in stakeholders" value="{{ x.id }}">
+                    {{ x.name }}
+                </option>
+
+            </select><!--<input type="text" name="country"/>--><br><br>
+
+            Type : <select name="initiative_type">
+
+                <option ng-repeat="x in types" value="{{ x.initiative_type }}">
+                    {{ x.initiative_type }}
+                </option>
+
+            </select><!--<input type="text" name="country"/>--><br><br>
+
+            Year : <input type="text" name="date"/><br><br>
+
+            Url : <input type="text" name="initiative_url"/><br><br>
+
+            <input type="submit" value="Add Initiative!"/><br><br><br>
+
+        </form>
+
+    </div>
 
     </body>
     </html>
