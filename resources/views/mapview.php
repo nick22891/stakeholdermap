@@ -108,7 +108,7 @@
 
                     if (type == "NGO") iconShade = "http://www.argentmac.com/devca/icons/sunflower.png";
 
-                    if (type == "ICT Vendor") iconShade = "http://www.argentmac.com/devca/icons/Silver.png";
+                    if (type == "ICT Services") iconShade = "http://www.argentmac.com/devca/icons/Silver.png";
 
                     if (type == "MNO/Telecommunications") iconShade = "http://www.argentmac.com/devca/icons/Pongrante.png";
 
@@ -323,7 +323,7 @@
 
                             break;
 
-                        case "Antigua" : marker = L.marker(new L.LatLng(data.results[0].latitude, data.results[0].longitude), {
+                        case "Antigua and Barbuda" : marker = L.marker(new L.LatLng(data.results[0].latitude, data.results[0].longitude), {
                             icon:	new L.NumberedDivIcon({number: size, iconUrl : iconShade})        										});
 
 //marker.bindPopup("Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area);
@@ -773,6 +773,10 @@
 <img src="http://www.argentmac.com/devca/icons/Pongrante.png"/> MNO/Telecommunications&nbsp;
 
 <img src="http://www.argentmac.com/devca/icons/Ametheyst.png"/> Media/Marketing&nbsp;
+
+<br><br>
+
+<a href="/stakeholders">View/Add/Edit/Delete Stakeholders</a> || View/Add/Edit/Delete Initiatives
 
 </body>
 

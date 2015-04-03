@@ -17,7 +17,7 @@ class AdminController extends Controller {
 
     function getStakeholderPage () {
 
-        $list = Stakeholder::all();
+        $list = Stakeholder::orderBy("country")->get();
 
         return view('stakeholders', ['list' => $list]);
 
@@ -59,7 +59,9 @@ class AdminController extends Controller {
 
         $list = Stakeholder::distinct()->select('country')->get();
 
-        return view('addstakeholders', ['listOfCountries' => $list]);
+        $types_list = Stakeholder::distinct()->select('type')->get();
+
+        return view('addstakeholders', ['listOfCountries' => $list, 'listOfTypes' => $types_list]);
 
     }
 
@@ -85,7 +87,7 @@ class AdminController extends Controller {
 
         $newstakeholder = Stakeholder::create(['name' => $name, 'type' => $type, 'functional_area' => $functional_area, 'url' => $url, 'country' => $country]);
 
-        return "New Stakeholder Info : " . $newstakeholder->name . " " . $newstakeholder->type . " " . $newstakeholder->functional_area . " " . $newstakeholder->url . " " . $newstakeholder->country;
+        return "<script>window.location = 'http://stakeholdermap.eu1.frbit.net/stakeholders'</script>";
 
     }
 
@@ -106,6 +108,54 @@ class AdminController extends Controller {
         $newinitiative = Initiative::create(['name' => $name, 'initiative_type' => $initiative_type, 'stakeholder' => $stakeholder, 'initiative_url' => $initiative_url, 'country' => $country, 'date' => $date]);
 
         return "New Initiative Info : " . $newinitiative->name . " " . $newinitiative->initiative_type . " " . $newinitiative->stakeholder . " " . $newinitiative->initiative_url . " " . $newinitiative->country. " " . $newinitiative->date;
+
+    }
+
+    function deleteStakeholder ($stakeholder_id) {
+
+        $stakeholder = Stakeholder::find($stakeholder_id);
+
+        $stakeholder->delete();
+
+        return "<script>window.location = 'http://stakeholdermap.eu1.frbit.net/stakeholders'</script>";
+
+    }
+
+    function editStakeholder () {
+
+        $id = Input::get('id');
+
+        $fieldname = Input::get('fieldname');
+
+        $content = Input::get('content');
+
+        $stakeholder = Stakeholder::find($id);
+
+        switch ($fieldname) {
+
+            case 'name' : $stakeholder->name = $content;
+
+            break;
+
+            case 'type' : $stakeholder->type = $content;
+
+            break;
+
+            case 'functional' : $stakeholder->functional_area = $content;
+
+            break;
+
+            case 'url' : $stakeholder->url = $content;
+
+            break;
+
+            case 'country' : $stakeholder->country = $content;
+
+            break;
+
+        }
+
+        $stakeholder->save();
 
     }
 

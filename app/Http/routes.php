@@ -31,7 +31,11 @@ Route::get('initiatives/add', 'AdminController@addInitiativePage');
 
 Route::post('initiatives/add', 'AdminController@processInitiative');
 
-Route::get('stakeholders/edit/{stakeholder}', 'AdminController@editStakeholderPage');
+Route::post('stakeholders/edit', 'AdminController@editStakeholder');
 
-Route::get('initiatives/edit/{stakeholder}', 'AdminController@editInitiativePage');
+Route::post('initiatives/edit', 'AdminController@editInitiative');
+
+Route::get('stakeholders/delete/{stakeholder}', 'AdminController@deleteStakeholder');
+
+Route::get('initiatives/edit/{initiative}', 'AdminController@deleteInitiative');
 
