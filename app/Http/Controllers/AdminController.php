@@ -25,7 +25,7 @@ class AdminController extends Controller {
 
     function getInitiativePage () {
 
-        $list = Initiative::all();
+        $list = Initiative::with('stakeholders')->orderBy('name')->get();
 
         return view('initiatives', ['list' => $list]);
 

@@ -14,6 +14,27 @@
 <head>
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"> </script>
+
+
+    <style>
+
+        table {
+
+            table-layout: fixed;
+            max-width:900px;
+            text-align: center;
+
+        }
+
+        td {
+
+            white-space: normal;
+            word-wrap:break-word;
+
+        }
+
+    </style>
+
 </head>
 
 <body>
@@ -25,10 +46,10 @@
 <div ng-app="" ng-init='results=<?php echo ($list); ?>'>
 
     <table class="table table-striped">
-        <thead style="font-weight: bold;"><tr><td>Name</td><td>Country</td><td>Stakeholder</td><td>Initiative Type</td><td>Date</td><td>URL</td></tr></thead>
+        <thead style="font-weight: bold;"><tr><td>Name</td><td>Country</td><td style="width:300px;">Stakeholders</td><td>Initiative Type</td><td>Date</td><td style="width:200px;">URL</td></tr></thead>
         <tbody>
-        <tr ng-repeat="x in results">
-            <td>{{ x.name }}</td><td>{{ x.country }}</td><td>{{ x.stakeholder }}</td><td>{{ x.initiative_type }}</td><td>{{ x.date }}</td><td>{{ x.initiative_url }}</td>
+        <tr ng-repeat="initiative in results">
+            <td>{{ initiative.name }}</td><td>{{ initiative.country }}</td><td><ul><li ng-repeat="stakeholder in initiative.stakeholders">{{ stakeholder.name }} ({{ stakeholder.pivot.type }})<br></li></ul></td><td>{{ initiative.initiative_type }}</td><td>{{ initiative.date }}</td><td>{{ initiative.initiative_url }}</td>
         </tr>
         </tbody>
     </table>
