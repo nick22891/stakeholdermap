@@ -124,11 +124,11 @@ Hint : Just click on any field in the table and type to edit it!<br><br>
 
 <div ng-app="" ng-init='results=<?php echo ($list); ?>'>
 
-    <table class="table table-striped">
-        <thead style="font-weight: bold;"><tr><td>Country</td><td>Name</td><td>Type</td><td>Functional Area</td><td style="width:200px;">URL</td><td style="width:90px;"></td></tr></thead>
+    <table class="table table-striped" style="text-align: center;">
+        <thead style="font-weight: bold;"><tr><td style="width:120px;">Country</td><td style="width: 220px;">Name</td><td style="width: 200px;">Type</td><td style="width: 200px;">Functional Area</td><td style="width: 250px;">Initiatives</td><td style="width:200px;">URL</td><td style="width:90px;"></td></tr></thead>
         <tbody>
         <tr ng-repeat="x in results" id="stakeholder-{{ x.id }}">
-            <td class="contentedit" id="country-{{ x.id }}" contenteditable="true">{{ x.country }}</td><td class="contentedit" id="name-{{ x.id }}" contenteditable="true">{{ x.name }}</td><td class="contentedit" id="type-{{ x.id }}" contenteditable="true">{{ x.type }}</td><td class="contentedit" id="functional-{{ x.id }}" contenteditable="true">{{ x.functional_area }}</td><td class="contentedit" id="url-{{ x.id }}" contenteditable="true">{{ x.url }}</td><td id="{{ x.id }}"><a href="/stakeholders/delete/{{ x.id }}" onclick="return deleteStakeholder( this.parentNode.id )">Delete</a></td>
+            <td class="contentedit" id="country-{{ x.id }}" contenteditable="true">{{ x.country }}</td><td class="contentedit" id="name-{{ x.id }}" contenteditable="true">{{ x.name }}</td><td class="contentedit" id="type-{{ x.id }}" contenteditable="true">{{ x.type }}</td><td class="contentedit" id="functional-{{ x.id }}" contenteditable="true">{{ x.functional_area }}</td><td><ul><li ng-repeat="initiative in x.initiatives">{{ initiative.name }} ({{ initiative.pivot.type }})<br></li></ul></td><td class="contentedit" id="url-{{ x.id }}" contenteditable="true">{{ x.url }}</td><td id="{{ x.id }}"><a href="/stakeholders/delete/{{ x.id }}" onclick="return deleteStakeholder( this.parentNode.id )">Delete</a></td>
         </tr>
         </tbody>
     </table>

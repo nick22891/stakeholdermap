@@ -41,6 +41,10 @@
 
 <br><br>
 
+<h3><a href="/map"><-- Back to Map</a></h3>
+
+<br>
+
 <h1>Initiatives (<a href="initiatives/add">Add</a>) </h1>
 
 <div ng-app="" ng-init='results=<?php echo ($list); ?>'>

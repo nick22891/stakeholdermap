@@ -17,7 +17,7 @@ class AdminController extends Controller {
 
     function getStakeholderPage () {
 
-        $list = Stakeholder::orderBy("country")->get();
+        $list = Stakeholder::with('initiatives')->orderBy('country')->get();
 
         return view('stakeholders', ['list' => $list]);
 

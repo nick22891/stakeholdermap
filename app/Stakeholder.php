@@ -27,7 +27,7 @@ class Stakeholder extends Model {
 
     public function initiatives() {
 
-        return $this->belongsToMany('App\Initiative', 'initiatives_stakeholders');
+        return $this->belongsToMany('App\Initiative', 'initiatives_stakeholders')->withPivot('type');
 
     }
 

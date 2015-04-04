@@ -776,7 +776,7 @@
 
 <br><br>
 
-<a href="/stakeholders">View/Add/Edit/Delete Stakeholders</a> || View/Add/Edit/Delete Initiatives
+<a href="/stakeholders">View/Add/Edit/Delete Stakeholders</a> || <a href="/initiatives">View/Add/Edit/Delete Initiatives</a>
 
 </body>
 
