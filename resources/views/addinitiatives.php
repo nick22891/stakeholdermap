@@ -22,13 +22,17 @@
 
         $( document ).ready(function() {
 
-            $('select#tokenize option').removeAttr("selected");
-
             $('#tokenize-leader').tokenize();
 
             $('#tokenize-partner').tokenize();
 
             $('#tokenize-sponsor').tokenize();
+
+            $('select#tokenize-leader option').removeAttr("selected");
+
+            $('select#tokenize-partner option').removeAttr("selected");
+
+            $('select#tokenize-sponsor option').removeAttr("selected");
 
             $('li.Token').remove();
         });
@@ -69,7 +73,7 @@
 
             Name : <input type="text" name="name"/><br><br>
 
-            Leader(s) : <i>(Start typing to see suggestions)</i><br><select id="tokenize-leader"  style="width:500px;" name="leaders" class="token-class">
+            Leader(s) : <i>(Start typing to see suggestions)</i><br><select id="tokenize-leader"  style="width:500px;" name="leaders[]" class="token-class">
 
                 <option ng-repeat="x in stakeholders" value="{{ x.id }}">
                     {{ x.name }}
@@ -77,7 +81,7 @@
 
             </select><!--<input type="text" name="country"/>--><br><br>
 
-            Partner(s) : <i>(Start typing to see suggestions)</i><br><select id="tokenize-partner"  style="width:500px;" name="partners" class="token-class">
+            Partner(s) : <i>(Start typing to see suggestions)</i><br><select id="tokenize-partner"  style="width:500px;" name="partners[]" class="token-class">
 
                 <option ng-repeat="x in stakeholders" value="{{ x.id }}">
                     {{ x.name }}
@@ -85,7 +89,7 @@
 
             </select><!--<input type="text" name="country"/>--><br><br>
 
-            Sponsor(s) : <i>(Start typing to see suggestions)</i><br><select id="tokenize-sponsor"  style="width:500px;" name="sponsors" class="token-class">
+            Sponsor(s) : <i>(Start typing to see suggestions)</i><br><select id="tokenize-sponsor"  style="width:500px;" name="sponsors[]" class="token-class">
 
                 <option ng-repeat="x in stakeholders" value="{{ x.id }}">
                     {{ x.name }}

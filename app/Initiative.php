@@ -25,4 +25,10 @@ class Initiative extends Model {
      */
     protected $hidden = ['password', 'remember_token'];
 
+    public function stakeholders() {
+
+        return $this->belongsToMany('App\Stakeholder', 'initiatives_stakeholders')->withPivot('type');
+
+    }
+
 }

@@ -12,8 +12,8 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="http://localhost/bootstrap.min.css">
-    <script src="http://localhost/angular.min.js"></script>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"> </script>
 </head>
 
 <body>

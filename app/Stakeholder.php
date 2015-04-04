@@ -25,4 +25,10 @@ class Stakeholder extends Model {
      */
     protected $hidden = ['password', 'remember_token'];
 
+    public function initiatives() {
+
+        return $this->belongsToMany('App\Initiative', 'initiatives_stakeholders');
+
+    }
+
 }

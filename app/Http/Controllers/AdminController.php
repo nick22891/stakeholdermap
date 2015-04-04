@@ -101,7 +101,11 @@ class AdminController extends Controller {
 
         $initiative_type = Input::get('initiative_type');
 
-        $stakeholder = Input::get('stakeholder');
+        $leaders = Input::get('leaders');
+
+        $partners = Input::get('partners');
+
+        $sponsors = Input::get('sponsors');
 
         $initiative_url = Input::get('initiative_url');
 
@@ -109,9 +113,30 @@ class AdminController extends Controller {
 
         $country = Input::get('country');
 
-        $newinitiative = Initiative::create(['name' => $name, 'initiative_type' => $initiative_type, 'stakeholder' => $stakeholder, 'initiative_url' => $initiative_url, 'country' => $country, 'date' => $date]);
+        $newinitiative = Initiative::create(['name' => $name, 'initiative_type' => $initiative_type, 'initiative_url' => $initiative_url, 'country' => $country, 'date' => $date]);
 
-        return "New Initiative Info : " . $newinitiative->name . " " . $newinitiative->initiative_type . " " . $newinitiative->stakeholder . " " . $newinitiative->initiative_url . " " . $newinitiative->country. " " . $newinitiative->date;
+        foreach ((array)$leaders as $leader_id) {
+
+          //insert query here using $newinitiative->id
+            $newinitiative->stakeholders()->attach($leader_id, ['type' => 'Leader']);
+
+        }
+
+        foreach ((array)$partners as $partner_id) {
+
+            //insert query here using $newinitiative->id
+            $newinitiative->stakeholders()->attach($partner_id, ['type' => 'Partner']);
+
+        }
+
+        foreach ((array)$sponsors as $sponsor_id) {
+
+            //insert query here using $newinitiative->id
+            $newinitiative->stakeholders()->attach($sponsor_id, ['type' => 'Sponsor']);
+
+        }
+
+        return "<script>window.location = 'http://stakeholdermap.eu1.frbit.net/initiatives'</script>";
 
     }
 
