@@ -15,9 +15,13 @@
 
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
+    <link rel="stylesheet" type="text/css" href="http://www.argentmac.com/cdn/jquery.tokenize.css" />
+
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"> </script>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <script type="text/javascript" src="http://www.argentmac.com/cdn/jquery.tokenize.js"></script>
 
     <style>
 
@@ -36,81 +40,29 @@
 
         }
 
+        .token-class {
+
+            width: 280px;
+
+        }
+
+        .Dropdown {
+
+            width:450px !important;
+
+        }
+
     </style>
 
 
     <script>
 
-        function deleteInitiative (id) {
-
-            if (confirm("Are you sure you want to delete this initiative?")) {
-
-                $.get("/initiatives/delete/" + id);
-
-                $("#initiative-" + id).hide();
-
-            }
-
-            return false;
-
-        }
-
-        $( document ).ready(function() {
-
-            //this function makes the contenteditables fire a change event
-
-            $('body').on('focus', '[contenteditable]', function () {
-                var $this = $(this);
-                $this.data('before', $this.html());
-                return $this;
-            }).on('blur paste', '[contenteditable]', function () {
-                var $this = $(this);
-                if ($this.data('before') !== $this.html()) {
-                    $this.data('before', $this.html());
-                    $this.trigger('change');
-                }
-                return $this;
-            });
-
-            $('.contentedit').on('change', function (event) {
-
-                xmlhttp=new XMLHttpRequest();
-
-                xmlhttp.onreadystatechange=function() {
-
-                    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-                        //alert("Reply received!");
-                    }
-
-                }
-
-                //$.get("/stakeholders/edit/" + id);
-
-                //event.target.id
-
-                var str = event.target.id;
-
-                var arr = str.split("-");
-
-                var fieldname = arr[0];
-
-                var stakeholderid = arr[1];
-
-                var content = event.target.innerHTML;
-
-                xmlhttp.open("POST","/initiatives/edit",true);
-
-                xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-
-                xmlhttp.send("id=" + stakeholderid + "&fieldname=" + fieldname + "&content=" + content);
-
-                //alert("id=" + stakeholderid + "&fieldname=" + fieldname + "&content=" + content);
-
-            });
-
-        });
+        var initiativeObject = JSON.parse('<?php echo ($list) ?>');
 
     </script>
+
+
+    <script src="js/initiatives.js"></script> <!--prepares all the necessary data and provides all the functions referenced below-->
 
 
 </head>
@@ -127,16 +79,54 @@
 
 Hint : Just click on any field in the table and type to edit it!<br><br>
 
-<div ng-app="" ng-init='results=<?php echo ($list); ?>'>
+<div ng-app="" ng-init='results=<?php echo ($list); ?>;stakeholders=<?php echo ($listOfStakeholders) ?>;'>
 
     <table class="table table-striped">
         <thead style="font-weight: bold;"><tr><td>Name</td><td>Country</td><td style="width:300px;">Stakeholders</td><td>Initiative Type</td><td>Date</td><td style="width:200px;">URL</td><td style="width:90px;"></td></tr></thead>
         <tbody>
         <tr ng-repeat="initiative in results" id="initiative-{{ initiative.id }}">
-            <td class="contentedit" contenteditable="true" id="name-{{ initiative.id }}">{{ initiative.name }}</td><td class="contentedit" contenteditable="true" id="country-{{ initiative.id }}">{{ initiative.country }}</td><td><ul><li ng-repeat="stakeholder in initiative.stakeholders">{{ stakeholder.name }} ({{ stakeholder.pivot.type }})<br></li></ul></td><td class="contentedit" contenteditable="true" id="type-{{ initiative.id }}">{{ initiative.initiative_type }}</td><td class="contentedit" contenteditable="true" id="date-{{ initiative.id }}">{{ initiative.date }}</td><td class="contentedit" contenteditable="true" id="url-{{ initiative.id }}">{{ initiative.initiative_url }}</td><td id="{{ initiative.id }}"><a href="/initiatives/delete/{{ x.id }}" onclick="return deleteInitiative( this.parentNode.id )">Delete</a></td>
+            <td class="contentedit" contenteditable="true" id="name-{{ initiative.id }}">{{ initiative.name }}</td><td class="contentedit" contenteditable="true" id="country-{{ initiative.id }}">{{ initiative.country }}</td><td class="editable-stakeholders" id="stakeholders-{{ initiative.id }}"><ul><li ng-repeat="stakeholder in initiative.stakeholders">{{ stakeholder.name }} ({{ stakeholder.pivot.type }})<br></li></ul></td><td class="contentedit" contenteditable="true" id="type-{{ initiative.id }}">{{ initiative.initiative_type }}</td><td class="contentedit" contenteditable="true" id="date-{{ initiative.id }}">{{ initiative.date }}</td><td class="contentedit" contenteditable="true" id="url-{{ initiative.id }}">{{ initiative.initiative_url }}</td><td id="{{ initiative.id }}"><a href="/initiatives/delete/{{ x.id }}" onclick="return deleteInitiative( this.parentNode.id )">Delete</a></td>
         </tr>
         </tbody>
     </table>
+
+    <div id="tokenize-boxes" style="display:none;">
+
+        Leader(s) : <i>(Start typing to see suggestions)</i><br>
+
+        <select id="tokenize-leader"  style="width:280px;" name="leaders[]" class="token-class">
+
+            <option ng-repeat="x in stakeholders" value="{{ x.id }}">
+                {{ x.name }}
+            </option>
+
+        </select><br><br>
+
+        Partner(s) : <i>(Start typing to see suggestions)</i><br>
+
+        <select id="tokenize-partner"  style="width:280px;" name="partners[]" class="token-class">
+
+            <option ng-repeat="x in stakeholders" value="{{ x.id }}">
+                {{ x.name }}
+            </option>
+
+        </select><!--<input type="text" name="country"/>--><br><br>
+
+        Sponsor(s) : <i>(Start typing to see suggestions)</i><br>
+
+        <select id="tokenize-sponsor"  style="width:280px;" name="sponsors[]" class="token-class">
+
+            <option ng-repeat="x in stakeholders" value="{{ x.id }}">
+                {{ x.name }}
+            </option>
+
+        </select><!--<input type="text" name="country"/>--><br><br>
+
+        <button type="button" onclick="submitStakeholdersDropdown($(this).closest('td').attr('id'))">Save Changes!</button>&nbsp;<button onclick="cancelBtn()" type="button">Cancel!</button>
+
+    </div>
+
+    <div id="extraContainer"></div><!-- used to hold tokenize boxes when not in use-->
 
 </div>
 

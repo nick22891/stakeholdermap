@@ -27,7 +27,9 @@ class AdminController extends Controller {
 
         $list = Initiative::with('stakeholders')->orderBy('name')->get();
 
-        return view('initiatives', ['list' => $list]);
+        $stakeholders_list = Stakeholder::distinct()->select('name', 'id')->get();
+
+        return view('initiatives', ['list' => $list, 'listOfStakeholders' => $stakeholders_list]);
 
     }
 
@@ -240,6 +242,51 @@ class AdminController extends Controller {
 
     }
 
+    function editInitiativeStakeholders () {
+
+        $id = Input::get('initiative_id');
+
+        $leaders = Input::get('leaders');
+
+        $partners = Input::get('partners');
+
+        $sponsors = Input::get('sponsors');
+
+        $initiative = Initiative::find($id);
+
+        $initiative->stakeholders()->detach();
+
+        foreach ((array)$leaders as $leader_id) {
+
+            $initiative->stakeholders()->attach($leader_id, ['type' => 'Leader']);
+
+        }
+
+        foreach ((array)$partners as $partner_id) {
+
+            $initiative->stakeholders()->attach($partner_id, ['type' => 'Partner']);
+
+        }
+
+        foreach ((array)$sponsors as $sponsor_id) {
+
+            $initiative->stakeholders()->attach($sponsor_id, ['type' => 'Sponsor']);
+
+        }
+
+        $ulist = "<ul>";
+
+        foreach ($initiative->stakeholders as $stakeholder) {
+
+            $ulist = $ulist . "<li>" . $stakeholder->name . " (" . $stakeholder->pivot->type . ")";
+
+        }
+
+        $ulist = $ulist . "</ul>";
+
+        return $ulist;
+
+    }
 
 }
 
