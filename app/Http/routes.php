@@ -37,5 +37,5 @@ Route::post('initiatives/edit', 'AdminController@editInitiative');
 
 Route::get('stakeholders/delete/{stakeholder}', 'AdminController@deleteStakeholder');
 
-Route::get('initiatives/edit/{initiative}', 'AdminController@deleteInitiative');
+Route::get('initiatives/delete/{initiative}', 'AdminController@deleteInitiative');
 

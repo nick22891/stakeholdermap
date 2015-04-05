@@ -144,9 +144,23 @@ class AdminController extends Controller {
 
         $stakeholder = Stakeholder::find($stakeholder_id);
 
+        $stakeholder->initiatives()->detach();
+
         $stakeholder->delete();
 
         return "<script>window.location = 'http://stakeholdermap.eu1.frbit.net/stakeholders'</script>";
+
+    }
+
+    function deleteInitiative ($initiative_id) {
+
+        $initiative = Initiative::find($initiative_id);
+
+        $initiative->stakeholders()->detach();
+
+        $initiative->delete();
+
+        return "<script>window.location = 'http://stakeholdermap.eu1.frbit.net/initiatives'</script>";
 
     }
 
@@ -187,6 +201,45 @@ class AdminController extends Controller {
         $stakeholder->save();
 
     }
+
+    function editInitiative () {
+
+        $id = Input::get('id');
+
+        $fieldname = Input::get('fieldname');
+
+        $content = Input::get('content');
+
+        $initiative = Initiative::find($id);
+
+        switch ($fieldname) {
+
+            case 'name' : $initiative->name = $content;
+
+                break;
+
+            case 'type' : $initiative->initiative_type = $content;
+
+                break;
+
+            case 'date' : $initiative->date = $content;
+
+                break;
+
+            case 'url' : $initiative->initiative_url = $content;
+
+                break;
+
+            case 'country' : $initiative->country = $content;
+
+                break;
+
+        }
+
+        $initiative->save();
+
+    }
+
 
 }
 
