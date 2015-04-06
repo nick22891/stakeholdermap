@@ -41,9 +41,9 @@ class AdminController extends Controller {
 
     }
 
-    function getInitiativeJSON ($stakeholder) {
+    function getInitiativeJSON ($stakeholder_id) {
 
-        $list = Initiative::where('stakeholder', $stakeholder)->get();
+        $list = Stakeholder::find($stakeholder_id)->initiatives;
 
         return '{"results":' . $list . '}';
 

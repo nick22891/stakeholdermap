@@ -19,7 +19,7 @@ Route::get('initiatives', 'AdminController@getInitiativePage');
 
 Route::get('stakeholdersJSON', 'AdminController@getStakeholderJSON');
 
-Route::get('initiativesJSON/{stakeholder}', 'AdminController@getInitiativeJSON');
+Route::get('initiativesJSON/{stakeholder_id}', 'AdminController@getInitiativeJSON');
 
 Route::get('geocodesJSON/{country}', 'AdminController@getGeocodeJSON');
 

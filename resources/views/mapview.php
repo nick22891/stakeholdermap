@@ -82,9 +82,11 @@
 
                         functional_area = data.results[i].functional_area;
 
+                        id = data.results[i].id;
+
                         //alert(countries[i]);
 
-                        plotCountry(country, name, type, url, functional_area, size);
+                        plotCountry(id, country, name, type, url, functional_area, size);
 
                     }
 
@@ -96,7 +98,7 @@
 
         }
 
-        function plotCountry (country, name, type, url, functional_area, size) {
+        function plotCountry (id, country, name, type, url, functional_area, size) {
 
             country = country.replace("&", "and");
 
@@ -155,7 +157,7 @@
 
                                     type: "GET",
 
-                                    url: encodeURI("http://stakeholdermap.eu1.frbit.net/initiativesJSON/" + name),
+                                    url: encodeURI("http://stakeholdermap.eu1.frbit.net/initiativesJSON/" + id),//sends stakeholder id
 
                                     dataType : "json",
 
@@ -165,7 +167,7 @@
 
                                             eventname = data.results[i].name;
 
-                                            preContent = "" + preContent + "<br>" + (i + 1) + ". " + eventname + "<br><br>Year : " + data.results[i].date + "<br><br>Url : " + data.results[i].initiative_url + "<br>";
+                                            preContent = "" + preContent + "<br><b>" + (i + 1) + ".</b> " + eventname + " (" + data.results[i].pivot.type + ")<br><br>Year : " + data.results[i].date + "<br><br>Url : " + data.results[i].initiative_url + "<br>";
 
                                         }
 
@@ -192,11 +194,38 @@
 
                             marker.on('click', function () {
 
-                                $("#sidebar").html("Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area);
+                                preContent = "<b>Stakeholder</b><br><br>Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area + "<br><br><b>Initiatives</b><br>";
 
-                                sidebar.show();
+                                $.ajax({
+
+                                    type: "GET",
+
+                                    url: encodeURI("http://stakeholdermap.eu1.frbit.net/initiativesJSON/" + id),
+
+                                    dataType : "json",
+
+                                    success : function (data) {
+
+                                        for(i = 0;i<data.results.length;i++){
+
+                                            eventname = data.results[i].name;
+
+                                            preContent = "" + preContent + "<br><b>" + (i + 1) + ".</b> " + eventname + " (" + data.results[i].pivot.type + ")<br><br>Year : " + data.results[i].date + "<br><br>Url : " + data.results[i].initiative_url + "<br>";
+
+                                        }
+
+                                        sidebar.show();
+
+                                        $("#sidebar").html(preContent);
+
+                                    }
+
+                                });
+
 
                             });
+
+
                             barbados.addLayer(marker);
 
                             break;
@@ -208,11 +237,37 @@
 
                             marker.on('click', function () {
 
-                                $("#sidebar").html("Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area);
+                                preContent = "<b>Stakeholder</b><br><br>Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area + "<br><br><b>Initiatives</b><br>";
 
-                                sidebar.show();
+                                $.ajax({
+
+                                    type: "GET",
+
+                                    url: encodeURI("http://stakeholdermap.eu1.frbit.net/initiativesJSON/" + id),
+
+                                    dataType : "json",
+
+                                    success : function (data) {
+
+                                        for(i = 0;i<data.results.length;i++){
+
+                                            eventname = data.results[i].name;
+
+                                            preContent = "" + preContent + "<br><b>" + (i + 1) + ".</b> " + eventname + " (" + data.results[i].pivot.type + ")<br><br>Year : " + data.results[i].date + "<br><br>Url : " + data.results[i].initiative_url + "<br>";
+
+                                        }
+
+                                        sidebar.show();
+
+                                        $("#sidebar").html(preContent);
+
+                                    }
+
+                                });
+
 
                             });
+
                             bahamas.addLayer(marker);
 
                             break;
@@ -224,12 +279,39 @@
 
                             marker.on('click', function () {
 
-                                $("#sidebar").html("Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area);
+                                preContent = "<b>Stakeholder</b><br><br>Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area + "<br><br><b>Initiatives</b><br>";
 
-                                sidebar.show();
+                                $.ajax({
+
+                                    type: "GET",
+
+                                    url: encodeURI("http://stakeholdermap.eu1.frbit.net/initiativesJSON/" + id),
+
+                                    dataType : "json",
+
+                                    success : function (data) {
+
+                                        for(i = 0;i<data.results.length;i++){
+
+                                            eventname = data.results[i].name;
+
+                                            preContent = "" + preContent + "<br><b>" + (i + 1) + ".</b> " + eventname + " (" + data.results[i].pivot.type + ")<br><br>Year : " + data.results[i].date + "<br><br>Url : " + data.results[i].initiative_url + "<br>";
+
+                                        }
+
+                                        sidebar.show();
+
+                                        $("#sidebar").html(preContent);
+
+                                    }
+
+                                });
+
 
                             });
-                            jamaica.addLayer(marker);
+
+
+                            cuba.addLayer(marker);
 
                             break;
 
@@ -240,11 +322,37 @@
 
                             marker.on('click', function () {
 
-                                $("#sidebar").html("Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area);
+                                preContent = "<b>Stakeholder</b><br><br>Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area + "<br><br><b>Initiatives</b><br>";
 
-                                sidebar.show();
+                                $.ajax({
+
+                                    type: "GET",
+
+                                    url: encodeURI("http://stakeholdermap.eu1.frbit.net/initiativesJSON/" + id),
+
+                                    dataType : "json",
+
+                                    success : function (data) {
+
+                                        for(i = 0;i<data.results.length;i++){
+
+                                            eventname = data.results[i].name;
+
+                                            preContent = "" + preContent + "<br><b>" + (i + 1) + ".</b> " + eventname + " (" + data.results[i].pivot.type + ")<br><br>Year : " + data.results[i].date + "<br><br>Url : " + data.results[i].initiative_url + "<br>";
+
+                                        }
+
+                                        sidebar.show();
+
+                                        $("#sidebar").html(preContent);
+
+                                    }
+
+                                });
+
 
                             });
+
                             haiti.addLayer(marker);
 
                             break;
@@ -256,11 +364,37 @@
 
                             marker.on('click', function () {
 
-                                $("#sidebar").html("Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area);
+                                preContent = "<b>Stakeholder</b><br><br>Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area + "<br><br><b>Initiatives</b><br>";
 
-                                sidebar.show();
+                                $.ajax({
+
+                                    type: "GET",
+
+                                    url: encodeURI("http://stakeholdermap.eu1.frbit.net/initiativesJSON/" + id),
+
+                                    dataType : "json",
+
+                                    success : function (data) {
+
+                                        for(i = 0;i<data.results.length;i++){
+
+                                            eventname = data.results[i].name;
+
+                                            preContent = "" + preContent + "<br><b>" + (i + 1) + ".</b> " + eventname + " (" + data.results[i].pivot.type + ")<br><br>Year : " + data.results[i].date + "<br><br>Url : " + data.results[i].initiative_url + "<br>";
+
+                                        }
+
+                                        sidebar.show();
+
+                                        $("#sidebar").html(preContent);
+
+                                    }
+
+                                });
+
 
                             });
+
                             anguilla.addLayer(marker);
 
                             break;
@@ -272,11 +406,37 @@
 
                             marker.on('click', function () {
 
-                                $("#sidebar").html("Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area);
+                                preContent = "<b>Stakeholder</b><br><br>Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area + "<br><br><b>Initiatives</b><br>";
 
-                                sidebar.show();
+                                $.ajax({
+
+                                    type: "GET",
+
+                                    url: encodeURI("http://stakeholdermap.eu1.frbit.net/initiativesJSON/" + id),
+
+                                    dataType : "json",
+
+                                    success : function (data) {
+
+                                        for(i = 0;i<data.results.length;i++){
+
+                                            eventname = data.results[i].name;
+
+                                            preContent = "" + preContent + "<br><b>" + (i + 1) + ".</b> " + eventname + " (" + data.results[i].pivot.type + ")<br><br>Year : " + data.results[i].date + "<br><br>Url : " + data.results[i].initiative_url + "<br>";
+
+                                        }
+
+                                        sidebar.show();
+
+                                        $("#sidebar").html(preContent);
+
+                                    }
+
+                                });
+
 
                             });
+
                             grenada.addLayer(marker);
 
                             break;
@@ -288,11 +448,37 @@
 
                             marker.on('click', function () {
 
-                                $("#sidebar").html("Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area);
+                                preContent = "<b>Stakeholder</b><br><br>Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area + "<br><br><b>Initiatives</b><br>";
 
-                                sidebar.show();
+                                $.ajax({
+
+                                    type: "GET",
+
+                                    url: encodeURI("http://stakeholdermap.eu1.frbit.net/initiativesJSON/" + id),
+
+                                    dataType : "json",
+
+                                    success : function (data) {
+
+                                        for(i = 0;i<data.results.length;i++){
+
+                                            eventname = data.results[i].name;
+
+                                            preContent = "" + preContent + "<br><b>" + (i + 1) + ".</b> " + eventname + " (" + data.results[i].pivot.type + ")<br><br>Year : " + data.results[i].date + "<br><br>Url : " + data.results[i].initiative_url + "<br>";
+
+                                        }
+
+                                        sidebar.show();
+
+                                        $("#sidebar").html(preContent);
+
+                                    }
+
+                                });
+
 
                             });
+
                             montserrat.addLayer(marker);
 
                             break;
@@ -304,11 +490,37 @@
 
                             marker.on('click', function () {
 
-                                $("#sidebar").html("Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area);
+                                preContent = "<b>Stakeholder</b><br><br>Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area + "<br><br><b>Initiatives</b><br>";
 
-                                sidebar.show();
+                                $.ajax({
+
+                                    type: "GET",
+
+                                    url: encodeURI("http://stakeholdermap.eu1.frbit.net/initiativesJSON/" + id),
+
+                                    dataType : "json",
+
+                                    success : function (data) {
+
+                                        for(i = 0;i<data.results.length;i++){
+
+                                            eventname = data.results[i].name;
+
+                                            preContent = "" + preContent + "<br><b>" + (i + 1) + ".</b> " + eventname + " (" + data.results[i].pivot.type + ")<br><br>Year : " + data.results[i].date + "<br><br>Url : " + data.results[i].initiative_url + "<br>";
+
+                                        }
+
+                                        sidebar.show();
+
+                                        $("#sidebar").html(preContent);
+
+                                    }
+
+                                });
+
 
                             });
+
                             saintlucia.addLayer(marker);
 
                             break;
@@ -320,11 +532,37 @@
 
                             marker.on('click', function () {
 
-                                $("#sidebar").html("Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area);
+                                preContent = "<b>Stakeholder</b><br><br>Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area + "<br><br><b>Initiatives</b><br>";
 
-                                sidebar.show();
+                                $.ajax({
+
+                                    type: "GET",
+
+                                    url: encodeURI("http://stakeholdermap.eu1.frbit.net/initiativesJSON/" + id),
+
+                                    dataType : "json",
+
+                                    success : function (data) {
+
+                                        for(i = 0;i<data.results.length;i++){
+
+                                            eventname = data.results[i].name;
+
+                                            preContent = "" + preContent + "<br><b>" + (i + 1) + ".</b> " + eventname + " (" + data.results[i].pivot.type + ")<br><br>Year : " + data.results[i].date + "<br><br>Url : " + data.results[i].initiative_url + "<br>";
+
+                                        }
+
+                                        sidebar.show();
+
+                                        $("#sidebar").html(preContent);
+
+                                    }
+
+                                });
+
 
                             });
+
                             saintvincent.addLayer(marker);
 
                             break;
@@ -336,11 +574,37 @@
 
                             marker.on('click', function () {
 
-                                $("#sidebar").html("Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area);
+                                preContent = "<b>Stakeholder</b><br><br>Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area + "<br><br><b>Initiatives</b><br>";
 
-                                sidebar.show();
+                                $.ajax({
+
+                                    type: "GET",
+
+                                    url: encodeURI("http://stakeholdermap.eu1.frbit.net/initiativesJSON/" + id),
+
+                                    dataType : "json",
+
+                                    success : function (data) {
+
+                                        for(i = 0;i<data.results.length;i++){
+
+                                            eventname = data.results[i].name;
+
+                                            preContent = "" + preContent + "<br><b>" + (i + 1) + ".</b> " + eventname + " (" + data.results[i].pivot.type + ")<br><br>Year : " + data.results[i].date + "<br><br>Url : " + data.results[i].initiative_url + "<br>";
+
+                                        }
+
+                                        sidebar.show();
+
+                                        $("#sidebar").html(preContent);
+
+                                    }
+
+                                });
+
 
                             });
+
                             dominica.addLayer(marker);
 
                             break;
@@ -352,11 +616,37 @@
 
                             marker.on('click', function () {
 
-                                $("#sidebar").html("Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area);
+                                preContent = "<b>Stakeholder</b><br><br>Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area + "<br><br><b>Initiatives</b><br>";
 
-                                sidebar.show();
+                                $.ajax({
+
+                                    type: "GET",
+
+                                    url: encodeURI("http://stakeholdermap.eu1.frbit.net/initiativesJSON/" + id),
+
+                                    dataType : "json",
+
+                                    success : function (data) {
+
+                                        for(i = 0;i<data.results.length;i++){
+
+                                            eventname = data.results[i].name;
+
+                                            preContent = "" + preContent + "<br><b>" + (i + 1) + ".</b> " + eventname + " (" + data.results[i].pivot.type + ")<br><br>Year : " + data.results[i].date + "<br><br>Url : " + data.results[i].initiative_url + "<br>";
+
+                                        }
+
+                                        sidebar.show();
+
+                                        $("#sidebar").html(preContent);
+
+                                    }
+
+                                });
+
 
                             });
+
                             antigua.addLayer(marker);
 
                             break;
@@ -368,11 +658,37 @@
 
                             marker.on('click', function () {
 
-                                $("#sidebar").html("Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area);
+                                preContent = "<b>Stakeholder</b><br><br>Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area + "<br><br><b>Initiatives</b><br>";
 
-                                sidebar.show();
+                                $.ajax({
+
+                                    type: "GET",
+
+                                    url: encodeURI("http://stakeholdermap.eu1.frbit.net/initiativesJSON/" + id),
+
+                                    dataType : "json",
+
+                                    success : function (data) {
+
+                                        for(i = 0;i<data.results.length;i++){
+
+                                            eventname = data.results[i].name;
+
+                                            preContent = "" + preContent + "<br><b>" + (i + 1) + ".</b> " + eventname + " (" + data.results[i].pivot.type + ")<br><br>Year : " + data.results[i].date + "<br><br>Url : " + data.results[i].initiative_url + "<br>";
+
+                                        }
+
+                                        sidebar.show();
+
+                                        $("#sidebar").html(preContent);
+
+                                    }
+
+                                });
+
 
                             });
+
                             trinidad.addLayer(marker);
 
                             break;
@@ -384,11 +700,37 @@
 
                             marker.on('click', function () {
 
-                                $("#sidebar").html("Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area);
+                                preContent = "<b>Stakeholder</b><br><br>Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area + "<br><br><b>Initiatives</b><br>";
 
-                                sidebar.show();
+                                $.ajax({
+
+                                    type: "GET",
+
+                                    url: encodeURI("http://stakeholdermap.eu1.frbit.net/initiativesJSON/" + id),
+
+                                    dataType : "json",
+
+                                    success : function (data) {
+
+                                        for(i = 0;i<data.results.length;i++){
+
+                                            eventname = data.results[i].name;
+
+                                            preContent = "" + preContent + "<br><b>" + (i + 1) + ".</b> " + eventname + " (" + data.results[i].pivot.type + ")<br><br>Year : " + data.results[i].date + "<br><br>Url : " + data.results[i].initiative_url + "<br>";
+
+                                        }
+
+                                        sidebar.show();
+
+                                        $("#sidebar").html(preContent);
+
+                                    }
+
+                                });
+
 
                             });
+
                             saintkitts.addLayer(marker);
 
                             break;
@@ -400,11 +742,37 @@
 
                             marker.on('click', function () {
 
-                                $("#sidebar").html("Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area);
+                                preContent = "<b>Stakeholder</b><br><br>Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area + "<br><br><b>Initiatives</b><br>";
 
-                                sidebar.show();
+                                $.ajax({
+
+                                    type: "GET",
+
+                                    url: encodeURI("http://stakeholdermap.eu1.frbit.net/initiativesJSON/" + id),
+
+                                    dataType : "json",
+
+                                    success : function (data) {
+
+                                        for(i = 0;i<data.results.length;i++){
+
+                                            eventname = data.results[i].name;
+
+                                            preContent = "" + preContent + "<br><b>" + (i + 1) + ".</b> " + eventname + " (" + data.results[i].pivot.type + ")<br><br>Year : " + data.results[i].date + "<br><br>Url : " + data.results[i].initiative_url + "<br>";
+
+                                        }
+
+                                        sidebar.show();
+
+                                        $("#sidebar").html(preContent);
+
+                                    }
+
+                                });
+
 
                             });
+
                             belize.addLayer(marker);
 
                             break;
@@ -416,11 +784,37 @@
 
                             marker.on('click', function () {
 
-                                $("#sidebar").html("Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area);
+                                preContent = "<b>Stakeholder</b><br><br>Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area + "<br><br><b>Initiatives</b><br>";
 
-                                sidebar.show();
+                                $.ajax({
+
+                                    type: "GET",
+
+                                    url: encodeURI("http://stakeholdermap.eu1.frbit.net/initiativesJSON/" + id),
+
+                                    dataType : "json",
+
+                                    success : function (data) {
+
+                                        for(i = 0;i<data.results.length;i++){
+
+                                            eventname = data.results[i].name;
+
+                                            preContent = "" + preContent + "<br><b>" + (i + 1) + ".</b> " + eventname + " (" + data.results[i].pivot.type + ")<br><br>Year : " + data.results[i].date + "<br><br>Url : " + data.results[i].initiative_url + "<br>";
+
+                                        }
+
+                                        sidebar.show();
+
+                                        $("#sidebar").html(preContent);
+
+                                    }
+
+                                });
+
 
                             });
+
                             guyana.addLayer(marker);
 
                             break;
@@ -432,11 +826,37 @@
 
                             marker.on('click', function () {
 
-                                $("#sidebar").html("Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area);
+                                preContent = "<b>Stakeholder</b><br><br>Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area + "<br><br><b>Initiatives</b><br>";
 
-                                sidebar.show();
+                                $.ajax({
+
+                                    type: "GET",
+
+                                    url: encodeURI("http://stakeholdermap.eu1.frbit.net/initiativesJSON/" + id),
+
+                                    dataType : "json",
+
+                                    success : function (data) {
+
+                                        for(i = 0;i<data.results.length;i++){
+
+                                            eventname = data.results[i].name;
+
+                                            preContent = "" + preContent + "<br><b>" + (i + 1) + ".</b> " + eventname + " (" + data.results[i].pivot.type + ")<br><br>Year : " + data.results[i].date + "<br><br>Url : " + data.results[i].initiative_url + "<br>";
+
+                                        }
+
+                                        sidebar.show();
+
+                                        $("#sidebar").html(preContent);
+
+                                    }
+
+                                });
+
 
                             });
+
                             suriname.addLayer(marker);
 
                             break;
@@ -448,11 +868,37 @@
 
                             marker.on('click', function () {
 
-                                $("#sidebar").html("Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area);
+                                preContent = "<b>Stakeholder</b><br><br>Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area + "<br><br><b>Initiatives</b><br>";
 
-                                sidebar.show();
+                                $.ajax({
+
+                                    type: "GET",
+
+                                    url: encodeURI("http://stakeholdermap.eu1.frbit.net/initiativesJSON/" + id),
+
+                                    dataType : "json",
+
+                                    success : function (data) {
+
+                                        for(i = 0;i<data.results.length;i++){
+
+                                            eventname = data.results[i].name;
+
+                                            preContent = "" + preContent + "<br><b>" + (i + 1) + ".</b> " + eventname + " (" + data.results[i].pivot.type + ")<br><br>Year : " + data.results[i].date + "<br><br>Url : " + data.results[i].initiative_url + "<br>";
+ss
+                                        }
+
+                                        sidebar.show();
+
+                                        $("#sidebar").html(preContent);
+
+                                    }
+
+                                });
+
 
                             });
+                            
                             grenada.addLayer(marker);
 
                             break;

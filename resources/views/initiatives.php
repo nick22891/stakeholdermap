@@ -23,6 +23,8 @@
 
     <script type="text/javascript" src="http://www.argentmac.com/cdn/jquery.tokenize.js"></script>
 
+    <script src="js/multifilter.min.js"></script>
+
     <style>
 
         table {
@@ -77,58 +79,74 @@
 
 <h1>Initiatives (<a href="initiatives/add">Add</a>) </h1>
 
-Hint : Just click on any field in the table and type to edit it!<br><br>
-
 <div ng-app="" ng-init='results=<?php echo ($list); ?>;stakeholders=<?php echo ($listOfStakeholders) ?>;'>
 
-    <table class="table table-striped">
+Hint : Just click on any field in the table and type to edit it!<br><br>
+
+<span style="font-size:22">Filter by :
+
+<input class="filter" ng-model="searchKeyword.name" id="namefilter" type="text" data-col="name" placeholder="Name"/>&nbsp;
+
+<input class="filter" ng-model="searchKeyword.country" id="countryfilter" type="text" placeholder="Country" data-col="country"/>&nbsp;
+
+<input class="filter" ng-model="searchKeyword.initiative_type" id="typefilter" type="text" placeholder="Initiative Type" data-col="type"/>&nbsp;
+
+<input class="filter" ng-model="searchKeyword.date" id="yearfilter" type="text" placeholder="Year" data-col="date"/>&nbsp;
+
+    </span>
+
+<br><br>
+
+    <table id="initiative-table" class="table table-striped">
         <thead style="font-weight: bold;"><tr><td>Name</td><td>Country</td><td style="width:300px;">Stakeholders</td><td>Initiative Type</td><td>Date</td><td style="width:200px;">URL</td><td style="width:90px;"></td></tr></thead>
         <tbody>
-        <tr ng-repeat="initiative in results" id="initiative-{{ initiative.id }}">
+        <tr ng-repeat="initiative in results | filter : searchKeyword" id="initiative-{{ initiative.id }}">
             <td class="contentedit" contenteditable="true" id="name-{{ initiative.id }}">{{ initiative.name }}</td><td class="contentedit" contenteditable="true" id="country-{{ initiative.id }}">{{ initiative.country }}</td><td class="editable-stakeholders" id="stakeholders-{{ initiative.id }}"><ul><li ng-repeat="stakeholder in initiative.stakeholders">{{ stakeholder.name }} ({{ stakeholder.pivot.type }})<br></li></ul></td><td class="contentedit" contenteditable="true" id="type-{{ initiative.id }}">{{ initiative.initiative_type }}</td><td class="contentedit" contenteditable="true" id="date-{{ initiative.id }}">{{ initiative.date }}</td><td class="contentedit" contenteditable="true" id="url-{{ initiative.id }}">{{ initiative.initiative_url }}</td><td id="{{ initiative.id }}"><a href="/initiatives/delete/{{ x.id }}" onclick="return deleteInitiative( this.parentNode.id )">Delete</a></td>
         </tr>
         </tbody>
     </table>
 
-    <div id="tokenize-boxes" style="display:none;">
+    <div id="extraContainer">
 
-        Leader(s) : <i>(Start typing to see suggestions)</i><br>
+        <div id="tokenize-boxes" style="display:none;">
 
-        <select id="tokenize-leader"  style="width:280px;" name="leaders[]" class="token-class">
+            Leader(s) : <i>(Start typing to see suggestions)</i><br>
 
-            <option ng-repeat="x in stakeholders" value="{{ x.id }}">
+            <select id="tokenize-leader"  style="width:280px;" name="leaders[]" class="token-class">
+
+                <option ng-repeat="x in stakeholders" value="{{ x.id }}">
+                    {{ x.name }}
+                </option>
+
+            </select><br><br>
+
+            Partner(s) : <i>(Start typing to see suggestions)</i><br>
+
+            <select id="tokenize-partner"  style="width:280px;" name="partners[]" class="token-class">
+
+                <option ng-repeat="x in stakeholders" value="{{ x.id }}">
+                   {{ x.name }}
+                </option>
+
+            </select><!--<input type="text" name="country"/>--><br><br>
+
+            Sponsor(s) : <i>(Start typing to see suggestions)</i><br>
+
+             <select id="tokenize-sponsor"  style="width:280px;" name="sponsors[]" class="token-class">
+
+              <option ng-repeat="x in stakeholders" value="{{ x.id }}">
                 {{ x.name }}
-            </option>
+               </option>
 
-        </select><br><br>
+             </select><!--<input type="text" name="country"/>--><br><br>
 
-        Partner(s) : <i>(Start typing to see suggestions)</i><br>
+           <button type="button" id="submitButton" onclick="submitStakeholdersDropdown($(this).closest('td').attr('id'))">Save Changes!</button>&nbsp;<button id="cancelButton" onclick="" type="button">Cancel!</button>
 
-        <select id="tokenize-partner"  style="width:280px;" name="partners[]" class="token-class">
+        </div>
 
-            <option ng-repeat="x in stakeholders" value="{{ x.id }}">
-                {{ x.name }}
-            </option>
+    </div><!-- used to hold tokenize boxes when not in use-->
 
-        </select><!--<input type="text" name="country"/>--><br><br>
-
-        Sponsor(s) : <i>(Start typing to see suggestions)</i><br>
-
-        <select id="tokenize-sponsor"  style="width:280px;" name="sponsors[]" class="token-class">
-
-            <option ng-repeat="x in stakeholders" value="{{ x.id }}">
-                {{ x.name }}
-            </option>
-
-        </select><!--<input type="text" name="country"/>--><br><br>
-
-        <button type="button" id="submitButton" onclick="submitStakeholdersDropdown($(this).closest('td').attr('id'))">Save Changes!</button>&nbsp;<button id="cancelButton" onclick="" type="button">Cancel!</button>
-
-    </div>
-
-    <div id="extraContainer"></div><!-- used to hold tokenize boxes when not in use-->
-
-</div>
+</div> <!-- end of ng app-->
 
 </body>
 </html>

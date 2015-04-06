@@ -1,3 +1,4 @@
+
 function getInitiativeById(id) {
     var results = initiativeObject.filter(function(x) { return x.id == id });
     return (results.length > 0 ? results[0] : null);
@@ -121,6 +122,8 @@ function cancelBtn (event) {
 
 $( document ).ready(function() {
 
+    $('.filter').multifilter();
+
     //set up the three tokenized boxes
 
     $('#tokenize-leader').tokenize();
@@ -137,9 +140,7 @@ $( document ).ready(function() {
 
     $('li.Token').remove();
 
-
-
-    $('.editable-stakeholders').click(function (event) {//get the boxes when the stakeholders td is clicked
+    $('.editable-stakeholders').on("click", function (event) {//get the boxes when the stakeholders td is clicked
 
         $(".Tokenize").remove();
 
@@ -225,6 +226,40 @@ $( document ).ready(function() {
         xmlhttp.send("id=" + stakeholderid + "&fieldname=" + fieldname + "&content=" + content);
 
         //alert("id=" + stakeholderid + "&fieldname=" + fieldname + "&content=" + content);
+
+    });
+
+    $(".filter").click(function(event){
+
+        $("#tokenize-boxes").hide();
+
+        $('#tokenize-boxes').appendTo($("#extraContainer"));
+
+        event.stopPropagation();
+
+    });
+
+    $(".filter").on("blur", function(event){
+
+        $('.editable-stakeholders').on("click", function (event) {//get the boxes when the stakeholders td is clicked
+
+            $(".Tokenize").remove();
+
+            $('#tokenize-boxes').appendTo($(this));
+
+            //alert($(this).attr("id"));
+
+            selectAppropriateOptions($(this).attr("id"));
+
+            $('#tokenize-leader').tokenize();
+
+            $('#tokenize-partner').tokenize();
+
+            $('#tokenize-sponsor').tokenize();
+
+            $("#tokenize-boxes").show();
+
+        });
 
     });
 
