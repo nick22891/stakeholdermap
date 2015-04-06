@@ -48,6 +48,8 @@
 
                     for(i = 0;i<data.results.length;i++){
 
+                        var size = 0;
+
                         country = data.results[i].country;
 
                         name = data.results[i].name;
@@ -56,7 +58,27 @@
 
                         url = data.results[i].url;
 
-                        size = data.results[i].size;
+                        //size = data.results[i].size;
+
+                        for (j = 0;j<data.results[i].initiatives.length;j++) {
+
+                            switch (data.results[i].initiatives[j].pivot.type) {
+
+                                case 'Leader' : size = size + 3;
+
+                                break;
+
+                                case 'Partner' : size = size + 2;
+
+                                break;
+
+                                case 'Sponsor' : size = size + 1;
+
+                                break;
+
+                            }
+
+                        }
 
                         functional_area = data.results[i].functional_area;
 

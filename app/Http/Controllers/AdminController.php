@@ -35,7 +35,7 @@ class AdminController extends Controller {
 
     function getStakeholderJSON () {
 
-        $list = Stakeholder::all();
+        $list = Stakeholder::with('initiatives')->get();
 
         return '{"results":' . $list . '}';
 
