@@ -122,7 +122,7 @@ Hint : Just click on any field in the table and type to edit it!<br><br>
 
         </select><!--<input type="text" name="country"/>--><br><br>
 
-        <button type="button" onclick="submitStakeholdersDropdown($(this).closest('td').attr('id'))">Save Changes!</button>&nbsp;<button onclick="cancelBtn()" type="button">Cancel!</button>
+        <button type="button" id="submitButton" onclick="submitStakeholdersDropdown($(this).closest('td').attr('id'))">Save Changes!</button>&nbsp;<button id="cancelButton" onclick="" type="button">Cancel!</button>
 
     </div>
 

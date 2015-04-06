@@ -71,8 +71,6 @@ function submitStakeholdersDropdown (id) {
 
             $('#tokenize-boxes').appendTo($("#extraContainer"));
 
-            $('#tokenize-boxes').hide();
-
             $("#" + id).html(xmlhttp.responseText);
             //alert("Reply received!");
         }
@@ -87,7 +85,9 @@ function submitStakeholdersDropdown (id) {
 
     xmlhttp.send(postString);
 
+    $('#tokenize-boxes').hide();
 
+    event.stopPropagation();
 
 }
 
@@ -105,9 +105,17 @@ function deleteInitiative (id) {
 
 }
 
-function cancelBtn () {
+function cancelBtn (event) {
 
-    $("#tokenize-boxes").hide();
+    //alert("Cancel Clicked!");
+
+    //event.stopPropagation();
+
+    var evt = e ? e:window.event;
+
+    if (evt.stopPropagation)    evt.stopPropagation();
+
+    if (evt.cancelBubble!=null) evt.cancelBubble = true;
 
 }
 
@@ -148,6 +156,24 @@ $( document ).ready(function() {
         $('#tokenize-sponsor').tokenize();
 
         $("#tokenize-boxes").show();
+
+    });
+
+    $('#cancelButton').click(function (event) {//get the boxes when the stakeholders td is clicked
+
+        $("#tokenize-boxes").hide();
+
+        $('#tokenize-boxes').appendTo($("#extraContainer"));
+
+        event.stopPropagation();
+
+    });
+
+    $('#submitButton').click(function (event) {//get the boxes when the stakeholders td is clicked
+
+        $("#tokenize-boxes").hide();
+
+        event.stopPropagation();
 
     });
 
