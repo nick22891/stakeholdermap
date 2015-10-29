@@ -41,7 +41,7 @@
 
             if (confirm("Are you sure you want to delete this stakeholder?")) {
 
-                $.get("/stakeholders/delete/" + id);
+                $.get("/stakeholdermap/stakeholders/delete/" + id);
 
                 $("#stakeholder-" + id).hide();
 

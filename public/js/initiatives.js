@@ -96,7 +96,7 @@ function deleteInitiative (id) {
 
     if (confirm("Are you sure you want to delete this initiative?")) {
 
-        $.get("/initiatives/delete/" + id);
+        $.get("/stakeholdermap/initiatives/delete/" + id);
 
         $("#initiative-" + id).hide();
 
