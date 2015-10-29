@@ -40,7 +40,7 @@
 
                 type: "GET",
 
-                url: "http://stakeholdermap.eu1.frbit.net/stakeholdersJSON",
+                url: "http://localhost/stakeholdermap/public/stakeholdersJSON",
 
                 dataType : "json",
 
@@ -108,7 +108,7 @@
 
                 type : "GET",
 
-                url: encodeURI("http://stakeholdermap.eu1.frbit.net/geocodesJSON/" + country),
+                url: encodeURI("http://localhost/stakeholdermap/public/geocodesJSON/" + country),
 
                 dataType : "json",
 
@@ -157,7 +157,7 @@
 
                                     type: "GET",
 
-                                    url: encodeURI("http://stakeholdermap.eu1.frbit.net/initiativesJSON/" + id),//sends stakeholder id
+                                    url: encodeURI("http://localhost/stakeholdermap/public/initiativesJSON/" + id),//sends stakeholder id
 
                                     dataType : "json",
 
@@ -200,7 +200,7 @@
 
                                     type: "GET",
 
-                                    url: encodeURI("http://stakeholdermap.eu1.frbit.net/initiativesJSON/" + id),
+                                    url: encodeURI("http://localhost/stakeholdermap/public/initiativesJSON/" + id),
 
                                     dataType : "json",
 
@@ -243,7 +243,7 @@
 
                                     type: "GET",
 
-                                    url: encodeURI("http://stakeholdermap.eu1.frbit.net/initiativesJSON/" + id),
+                                    url: encodeURI("http://localhost/stakeholdermap/public/initiativesJSON/" + id),
 
                                     dataType : "json",
 
@@ -285,7 +285,7 @@
 
                                     type: "GET",
 
-                                    url: encodeURI("http://stakeholdermap.eu1.frbit.net/initiativesJSON/" + id),
+                                    url: encodeURI("http://localhost/stakeholdermap/public/initiativesJSON/" + id),
 
                                     dataType : "json",
 
@@ -328,7 +328,7 @@
 
                                     type: "GET",
 
-                                    url: encodeURI("http://stakeholdermap.eu1.frbit.net/initiativesJSON/" + id),
+                                    url: encodeURI("http://localhost/stakeholdermap/public/initiativesJSON/" + id),
 
                                     dataType : "json",
 
@@ -370,7 +370,7 @@
 
                                     type: "GET",
 
-                                    url: encodeURI("http://stakeholdermap.eu1.frbit.net/initiativesJSON/" + id),
+                                    url: encodeURI("http://localhost/stakeholdermap/public/initiativesJSON/" + id),
 
                                     dataType : "json",
 
@@ -412,7 +412,7 @@
 
                                     type: "GET",
 
-                                    url: encodeURI("http://stakeholdermap.eu1.frbit.net/initiativesJSON/" + id),
+                                    url: encodeURI("http://localhost/stakeholdermap/public/initiativesJSON/" + id),
 
                                     dataType : "json",
 
@@ -454,7 +454,7 @@
 
                                     type: "GET",
 
-                                    url: encodeURI("http://stakeholdermap.eu1.frbit.net/initiativesJSON/" + id),
+                                    url: encodeURI("http://localhost/stakeholdermap/public/initiativesJSON/" + id),
 
                                     dataType : "json",
 
@@ -496,7 +496,7 @@
 
                                     type: "GET",
 
-                                    url: encodeURI("http://stakeholdermap.eu1.frbit.net/initiativesJSON/" + id),
+                                    url: encodeURI("http://localhost/stakeholdermap/public/initiativesJSON/" + id),
 
                                     dataType : "json",
 
@@ -538,7 +538,7 @@
 
                                     type: "GET",
 
-                                    url: encodeURI("http://stakeholdermap.eu1.frbit.net/initiativesJSON/" + id),
+                                    url: encodeURI("http://localhost/stakeholdermap/public/initiativesJSON/" + id),
 
                                     dataType : "json",
 
@@ -580,7 +580,7 @@
 
                                     type: "GET",
 
-                                    url: encodeURI("http://stakeholdermap.eu1.frbit.net/initiativesJSON/" + id),
+                                    url: encodeURI("http://localhost/stakeholdermap/public/initiativesJSON/" + id),
 
                                     dataType : "json",
 
@@ -622,7 +622,7 @@
 
                                     type: "GET",
 
-                                    url: encodeURI("http://stakeholdermap.eu1.frbit.net/initiativesJSON/" + id),
+                                    url: encodeURI("http://localhost/stakeholdermap/public/initiativesJSON/" + id),
 
                                     dataType : "json",
 
@@ -664,7 +664,7 @@
 
                                     type: "GET",
 
-                                    url: encodeURI("http://stakeholdermap.eu1.frbit.net/initiativesJSON/" + id),
+                                    url: encodeURI("http://localhost/stakeholdermap/public/initiativesJSON/" + id),
 
                                     dataType : "json",
 
@@ -706,7 +706,7 @@
 
                                     type: "GET",
 
-                                    url: encodeURI("http://stakeholdermap.eu1.frbit.net/initiativesJSON/" + id),
+                                    url: encodeURI("http://localhost/stakeholdermap/public/initiativesJSON/" + id),
 
                                     dataType : "json",
 
@@ -748,7 +748,7 @@
 
                                     type: "GET",
 
-                                    url: encodeURI("http://stakeholdermap.eu1.frbit.net/initiativesJSON/" + id),
+                                    url: encodeURI("http://localhost/stakeholdermap/public/initiativesJSON/" + id),
 
                                     dataType : "json",
 
@@ -790,7 +790,7 @@
 
                                     type: "GET",
 
-                                    url: encodeURI("http://stakeholdermap.eu1.frbit.net/initiativesJSON/" + id),
+                                    url: encodeURI("http://localhost/stakeholdermap/public/initiativesJSON/" + id),
 
                                     dataType : "json",
 
@@ -832,7 +832,7 @@
 
                                     type: "GET",
 
-                                    url: encodeURI("http://stakeholdermap.eu1.frbit.net/initiativesJSON/" + id),
+                                    url: encodeURI("http://localhost/stakeholdermap/public/initiativesJSON/" + id),
 
                                     dataType : "json",
 
@@ -874,7 +874,7 @@
 
                                     type: "GET",
 
-                                    url: encodeURI("http://stakeholdermap.eu1.frbit.net/initiativesJSON/" + id),
+                                    url: encodeURI("http://localhost/stakeholdermap/public/initiativesJSON/" + id),
 
                                     dataType : "json",
 
@@ -1244,7 +1244,7 @@ ss
 
 <br><br>
 
-<a href="/stakeholders">View/Add/Edit/Delete Stakeholders</a> || <a href="/initiatives">View/Add/Edit/Delete Initiatives</a>
+<a href="stakeholders">View/Add/Edit/Delete Stakeholders</a> || <a href="initiatives">View/Add/Edit/Delete Initiatives</a>
 
 </body>
 
