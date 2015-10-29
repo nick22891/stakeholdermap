@@ -41,7 +41,7 @@
 
             if (confirm("Are you sure you want to delete this stakeholder?")) {
 
-                $.get("/stakeholdermap/stakeholders/delete/" + id);
+                $.get("/stakeholdermap/public/stakeholders/delete/" + id);
 
                 $("#stakeholder-" + id).hide();
 
@@ -128,7 +128,7 @@ Hint : Just click on any field in the table and type to edit it!<br><br>
         <thead style="font-weight: bold;"><tr><td style="width:120px;">Country</td><td style="width: 220px;">Name</td><td style="width: 200px;">Type</td><td style="width: 200px;">Functional Area</td><td style="width: 250px;">Initiatives</td><td style="width:200px;">URL</td><td style="width:90px;"></td></tr></thead>
         <tbody>
         <tr ng-repeat="stakeholder in results" id="stakeholder-{{ stakeholder.id }}">
-            <td class="contentedit" id="country-{{ stakeholder.id }}" contenteditable="true">{{ stakeholder.country }}</td><td class="contentedit" id="name-{{ stakeholder.id }}" contenteditable="true">{{ stakeholder.name }}</td><td class="contentedit" id="type-{{ stakeholder.id }}" contenteditable="true">{{ stakeholder.type }}</td><td class="contentedit" id="functional-{{ stakeholder.id }}" contenteditable="true">{{ stakeholder.functional_area }}</td><td><ul><li ng-repeat="initiative in stakeholder.initiatives">{{ initiative.name }} ({{ initiative.pivot.type }})<br></li></ul></td><td class="contentedit" id="url-{{ stakeholder.id }}" contenteditable="true">{{ stakeholder.url }}</td><td id="{{ stakeholder.id }}"><a href="/stakeholdermap/stakeholders/delete/{{ stakeholder.id }}" onclick="return deleteStakeholder( this.parentNode.id )">Delete</a></td>
+            <td class="contentedit" id="country-{{ stakeholder.id }}" contenteditable="true">{{ stakeholder.country }}</td><td class="contentedit" id="name-{{ stakeholder.id }}" contenteditable="true">{{ stakeholder.name }}</td><td class="contentedit" id="type-{{ stakeholder.id }}" contenteditable="true">{{ stakeholder.type }}</td><td class="contentedit" id="functional-{{ stakeholder.id }}" contenteditable="true">{{ stakeholder.functional_area }}</td><td><ul><li ng-repeat="initiative in stakeholder.initiatives">{{ initiative.name }} ({{ initiative.pivot.type }})<br></li></ul></td><td class="contentedit" id="url-{{ stakeholder.id }}" contenteditable="true">{{ stakeholder.url }}</td><td id="{{ stakeholder.id }}"><a href="/stakeholdermap/public/stakeholders/delete/{{ stakeholder.id }}" onclick="return deleteStakeholder( this.parentNode.id )">Delete</a></td>
         </tr>
         </tbody>
     </table>
