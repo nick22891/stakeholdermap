@@ -112,7 +112,7 @@
 
 <body><br><br>
 
-<h3><a href="/map"><-- Back to Map</a></h3>
+<h3><a href="map"><-- Back to Map</a></h3>
 
 <br>
 

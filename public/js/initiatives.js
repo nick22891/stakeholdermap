@@ -78,7 +78,7 @@ function submitStakeholdersDropdown (id) {
 
     }
 
-    xmlhttp.open("POST","/initiatives/editStakeholders",true);
+    xmlhttp.open("POST","/stakeholdermap/initiatives/editStakeholders",true);
 
     xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 
@@ -96,7 +96,7 @@ function deleteInitiative (id) {
 
     if (confirm("Are you sure you want to delete this initiative?")) {
 
-        $.get("/stakeholdermap/initiatives/delete/" + id);
+        $.get("/stakeholdermap/public/initiatives/delete/" + id);
 
         $("#initiative-" + id).hide();
 
@@ -219,7 +219,7 @@ $( document ).ready(function() {
 
         var content = event.target.innerHTML;
 
-        xmlhttp.open("POST","/initiatives/edit",true);
+        xmlhttp.open("POST","/stakeholdermap/public/initiatives/edit",true);
 
         xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 
