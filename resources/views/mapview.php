@@ -40,7 +40,7 @@
 
                 type: "GET",
 
-                url: "http://54.68.79.59/stakeholdermap/public/stakeholdersJSON",
+                url: "http://localhost/stakeholdermap/public/stakeholdersJSON",
 
                 dataType : "json",
 
@@ -108,7 +108,7 @@
 
                 type : "GET",
 
-                url: encodeURI("http://54.68.79.59/stakeholdermap/public/geocodesJSON/" + country),
+                url: encodeURI("http://localhost/stakeholdermap/public/geocodesJSON/" + country),
 
                 dataType : "json",
 
@@ -147,7 +147,9 @@
                             //title: title
                         });
 
-                            //marker.bindPopup("Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area);
+                            marker.bindPopup("Name : " + name + "Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area);
+
+                            jamaicanPopupText += "<div class='organization-name'><a href='#' onclick='infoSlideDown(this);return false;'><b>" + name + "</b></a><p style='display:none;' class='organization-content'>" + "Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area + "</p></div><br>";
 
                             marker.on('click', function () {
 
@@ -157,7 +159,7 @@
 
                                     type: "GET",
 
-                                    url: encodeURI("http://54.68.79.59/stakeholdermap/public/initiativesJSON/" + id),//sends stakeholder id
+                                    url: encodeURI("http://localhost/stakeholdermap/public/initiativesJSON/" + id),//sends stakeholder id
 
                                     dataType : "json",
 
@@ -200,7 +202,7 @@
 
                                     type: "GET",
 
-                                    url: encodeURI("http://54.68.79.59/stakeholdermap/public/initiativesJSON/" + id),
+                                    url: encodeURI("http://localhost/stakeholdermap/public/initiativesJSON/" + id),
 
                                     dataType : "json",
 
@@ -243,7 +245,7 @@
 
                                     type: "GET",
 
-                                    url: encodeURI("http://54.68.79.59/stakeholdermap/public/initiativesJSON/" + id),
+                                    url: encodeURI("http://localhost/stakeholdermap/public/initiativesJSON/" + id),
 
                                     dataType : "json",
 
@@ -285,7 +287,7 @@
 
                                     type: "GET",
 
-                                    url: encodeURI("http://54.68.79.59/stakeholdermap/public/initiativesJSON/" + id),
+                                    url: encodeURI("http://localhost/stakeholdermap/public/initiativesJSON/" + id),
 
                                     dataType : "json",
 
@@ -328,7 +330,7 @@
 
                                     type: "GET",
 
-                                    url: encodeURI("http://54.68.79.59/stakeholdermap/public/initiativesJSON/" + id),
+                                    url: encodeURI("http://localhost/stakeholdermap/public/initiativesJSON/" + id),
 
                                     dataType : "json",
 
@@ -370,7 +372,7 @@
 
                                     type: "GET",
 
-                                    url: encodeURI("http://54.68.79.59/stakeholdermap/public/initiativesJSON/" + id),
+                                    url: encodeURI("http://localhost/stakeholdermap/public/initiativesJSON/" + id),
 
                                     dataType : "json",
 
@@ -412,7 +414,7 @@
 
                                     type: "GET",
 
-                                    url: encodeURI("http://54.68.79.59/stakeholdermap/public/initiativesJSON/" + id),
+                                    url: encodeURI("http://localhost/stakeholdermap/public/initiativesJSON/" + id),
 
                                     dataType : "json",
 
@@ -454,7 +456,7 @@
 
                                     type: "GET",
 
-                                    url: encodeURI("http://54.68.79.59/stakeholdermap/public/initiativesJSON/" + id),
+                                    url: encodeURI("http://localhost/stakeholdermap/public/initiativesJSON/" + id),
 
                                     dataType : "json",
 
@@ -496,7 +498,7 @@
 
                                     type: "GET",
 
-                                    url: encodeURI("http://54.68.79.59/stakeholdermap/public/initiativesJSON/" + id),
+                                    url: encodeURI("http://localhost/stakeholdermap/public/initiativesJSON/" + id),
 
                                     dataType : "json",
 
@@ -538,7 +540,7 @@
 
                                     type: "GET",
 
-                                    url: encodeURI("http://54.68.79.59/stakeholdermap/public/initiativesJSON/" + id),
+                                    url: encodeURI("http://localhost/stakeholdermap/public/initiativesJSON/" + id),
 
                                     dataType : "json",
 
@@ -580,7 +582,7 @@
 
                                     type: "GET",
 
-                                    url: encodeURI("http://54.68.79.59/stakeholdermap/public/initiativesJSON/" + id),
+                                    url: encodeURI("http://localhost/stakeholdermap/public/initiativesJSON/" + id),
 
                                     dataType : "json",
 
@@ -622,7 +624,7 @@
 
                                     type: "GET",
 
-                                    url: encodeURI("http://54.68.79.59/stakeholdermap/public/initiativesJSON/" + id),
+                                    url: encodeURI("http://localhost/stakeholdermap/public/initiativesJSON/" + id),
 
                                     dataType : "json",
 
@@ -664,7 +666,7 @@
 
                                     type: "GET",
 
-                                    url: encodeURI("http://54.68.79.59/stakeholdermap/public/initiativesJSON/" + id),
+                                    url: encodeURI("http://localhost/stakeholdermap/public/initiativesJSON/" + id),
 
                                     dataType : "json",
 
@@ -706,7 +708,7 @@
 
                                     type: "GET",
 
-                                    url: encodeURI("http://54.68.79.59/stakeholdermap/public/initiativesJSON/" + id),
+                                    url: encodeURI("http://localhost/stakeholdermap/public/initiativesJSON/" + id),
 
                                     dataType : "json",
 
@@ -748,7 +750,7 @@
 
                                     type: "GET",
 
-                                    url: encodeURI("http://54.68.79.59/stakeholdermap/public/initiativesJSON/" + id),
+                                    url: encodeURI("http://localhost/stakeholdermap/public/initiativesJSON/" + id),
 
                                     dataType : "json",
 
@@ -790,7 +792,7 @@
 
                                     type: "GET",
 
-                                    url: encodeURI("http://54.68.79.59/stakeholdermap/public/initiativesJSON/" + id),
+                                    url: encodeURI("http://localhost/stakeholdermap/public/initiativesJSON/" + id),
 
                                     dataType : "json",
 
@@ -832,7 +834,7 @@
 
                                     type: "GET",
 
-                                    url: encodeURI("http://54.68.79.59/stakeholdermap/public/initiativesJSON/" + id),
+                                    url: encodeURI("http://localhost/stakeholdermap/public/initiativesJSON/" + id),
 
                                     dataType : "json",
 
@@ -874,7 +876,7 @@
 
                                     type: "GET",
 
-                                    url: encodeURI("http://54.68.79.59/stakeholdermap/public/initiativesJSON/" + id),
+                                    url: encodeURI("http://localhost/stakeholdermap/public/initiativesJSON/" + id),
 
                                     dataType : "json",
 
@@ -961,7 +963,7 @@ ss
 
 <script>
 
-
+    var jamaicanPopupText = "<b>Organizations</b><br><br>";
 
     var jamaica = new L.MarkerClusterGroup({maxClusterRadius: 60,
         iconCreateFunction: null,
@@ -970,7 +972,20 @@ ss
         zoomToBoundsOnClick: false});
 
     jamaica.on('clusterclick', function (a) {
-        a.layer.spiderfy();
+        //a.layer.spiderfy();
+        //set up a standalone popup (use a popup as a layer)
+        var popup = L.popup(
+
+            {
+
+                maxHeight: 300,
+
+            }
+
+        )
+            .setLatLng([18.10958, -77.297508])
+            .setContent(jamaicanPopupText)
+            .openOn(map);
     });
 
     var barbados = new L.MarkerClusterGroup({maxClusterRadius: 60,
@@ -1245,6 +1260,26 @@ ss
 <br><br>
 
 <a href="stakeholders">View/Add/Edit/Delete Stakeholders</a> || <a href="initiatives">View/Add/Edit/Delete Initiatives</a>
+
+<script>
+
+    $(document).ready(function(){
+
+        $(".organization-name").click(function () {
+
+            alert("Testing!");
+
+        })
+
+    });
+
+    function infoSlideDown (element) {
+
+        var subElement = $(element).next().slideToggle("fast");
+
+    }
+
+</script>
 
 </body>
 
