@@ -984,7 +984,42 @@ ss
 <body>
 
 <div id="sidebar">
-    <h1></h1>
+    <b>Filter by Country : </b><br>
+    <input checked type="checkbox" name="country" id="jamaica" class="country-boxes">Jamaica<br>
+
+    <input checked type="checkbox" name="country" id="trinidad" class="country-boxes">Trinidad & Tobago<br>
+
+    <input checked type="checkbox" name="country" id="bahamas" class="country-boxes">Bahamas<br>
+
+    <input checked type="checkbox" name="country" id="belize" class="country-boxes">Belize<br>
+
+    <input checked type="checkbox" name="country" id="barbados" class="country-boxes">Barbados<br>
+
+    <input checked type="checkbox" name="country" id="cuba" class="country-boxes">Cuba<br>
+
+    <input checked type="checkbox" name="country" id="anguilla" class="country-boxes">Anguilla<br>
+
+    <input checked type="checkbox" name="country" id="haiti" class="country-boxes">Haiti<br>
+
+    <input checked type="checkbox" name="country" id="grenada" class="country-boxes">Grenada<br>
+
+    <input checked type="checkbox" name="country" id="montserrat" class="country-boxes">Montserrat<br>
+
+    <input checked type="checkbox" name="country" id="saintlucia" class="country-boxes">St. Lucia<br>
+
+    <input checked type="checkbox" name="country" id="saintvincent" class="country-boxes">St. Vincent<br>
+
+    <input checked type="checkbox" name="country" id="dominica" class="country-boxes">Dominica<br>
+
+    <input checked type="checkbox" name="country" id="antigua" class="country-boxes">Antigua<br>
+
+    <input checked type="checkbox" name="country" id="saintkitts" class="country-boxes">St. Kitts<br>
+
+    <input checked type="checkbox" name="country" id="guyana" class="country-boxes">Guyana<br>
+
+    <input checked type="checkbox" name="country" id="suriname" class="country-boxes">Suriname<br>
+
+
 </div>
 
 <script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js'></script>
@@ -1523,9 +1558,11 @@ ss
 
     map.addControl(sidebar);
 
+    sidebar.show();
+
     //
 
-    map.on('click', function () { sidebar.hide(); });
+    //map.on('click', function () { sidebar.hide(); });
 
 </script>
 
@@ -1553,11 +1590,13 @@ ss
 
     $(document).ready(function(){
 
-        $(".organization-name").click(function () {
+        $(".country-boxes").click(function (event) {
 
-            alert("Testing!");
+            if (!$("#" + event.target.id).prop("checked")) map.removeLayer(window[event.target.id]);
 
-        })
+            else map.addLayer(window[event.target.id]);
+
+        });
 
     });
 
