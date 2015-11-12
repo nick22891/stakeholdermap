@@ -23,6 +23,8 @@ Route::get('initiativesJSON/{stakeholder_id}', 'AdminController@getInitiativeJSO
 
 Route::get('geocodesJSON/{country}', 'AdminController@getGeocodeJSON');
 
+Route::get('geocodesJSON', 'AdminController@getAllGeocodeJSON');
+
 Route::get('stakeholders/add', 'AdminController@addStakeholderPage');
 
 Route::post('stakeholders/add', 'AdminController@processStakeholder');

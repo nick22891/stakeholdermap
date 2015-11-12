@@ -194,6 +194,8 @@
 
 //marker.bindPopup("Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area);
 
+                            barbadosPopupText += "<div class='organization-name'><a href='#' onclick='infoSlideDown(this);return false;'><b>" + name + "</b></a><p style='display:none;' class='organization-content'>" + "Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area + "</p></div><br>";
+
                             marker.on('click', function () {
 
                                 preContent = "<b>Stakeholder</b><br><br>Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area + "<br><br><b>Initiatives</b><br>";
@@ -237,6 +239,8 @@
 
 //marker.bindPopup("Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area);
 
+                            bahamasPopupText += "<div class='organization-name'><a href='#' onclick='infoSlideDown(this);return false;'><b>" + name + "</b></a><p style='display:none;' class='organization-content'>" + "Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area + "</p></div><br>";
+
                             marker.on('click', function () {
 
                                 preContent = "<b>Stakeholder</b><br><br>Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area + "<br><br><b>Initiatives</b><br>";
@@ -278,6 +282,8 @@
                             icon:	new L.NumberedDivIcon({number: size, iconUrl : iconShade})        										});
 
 //marker.bindPopup("Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area);
+
+                            cubaPopupText += "<div class='organization-name'><a href='#' onclick='infoSlideDown(this);return false;'><b>" + name + "</b></a><p style='display:none;' class='organization-content'>" + "Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area + "</p></div><br>";
 
                             marker.on('click', function () {
 
@@ -322,6 +328,8 @@
 
 //marker.bindPopup("Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area);
 
+                            haitiPopupText += "<div class='organization-name'><a href='#' onclick='infoSlideDown(this);return false;'><b>" + name + "</b></a><p style='display:none;' class='organization-content'>" + "Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area + "</p></div><br>";
+
                             marker.on('click', function () {
 
                                 preContent = "<b>Stakeholder</b><br><br>Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area + "<br><br><b>Initiatives</b><br>";
@@ -363,6 +371,8 @@
                             icon:	new L.NumberedDivIcon({number: size, iconUrl : iconShade})        										});
 
 //marker.bindPopup("Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area);
+
+                            anguillaPopupText += "<div class='organization-name'><a href='#' onclick='infoSlideDown(this);return false;'><b>" + name + "</b></a><p style='display:none;' class='organization-content'>" + "Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area + "</p></div><br>";
 
                             marker.on('click', function () {
 
@@ -406,6 +416,8 @@
 
 //marker.bindPopup("Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area);
 
+                            grenadaPopupText += "<div class='organization-name'><a href='#' onclick='infoSlideDown(this);return false;'><b>" + name + "</b></a><p style='display:none;' class='organization-content'>" + "Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area + "</p></div><br>";
+
                             marker.on('click', function () {
 
                                 preContent = "<b>Stakeholder</b><br><br>Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area + "<br><br><b>Initiatives</b><br>";
@@ -447,6 +459,8 @@
                             icon:	new L.NumberedDivIcon({number: size, iconUrl : iconShade})        										});
 
 //marker.bindPopup("Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area);
+
+                            montserratPopupText += "<div class='organization-name'><a href='#' onclick='infoSlideDown(this);return false;'><b>" + name + "</b></a><p style='display:none;' class='organization-content'>" + "Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area + "</p></div><br>";
 
                             marker.on('click', function () {
 
@@ -490,6 +504,8 @@
 
 //marker.bindPopup("Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area);
 
+                            saintluciaPopupText += "<div class='organization-name'><a href='#' onclick='infoSlideDown(this);return false;'><b>" + name + "</b></a><p style='display:none;' class='organization-content'>" + "Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area + "</p></div><br>";
+
                             marker.on('click', function () {
 
                                 preContent = "<b>Stakeholder</b><br><br>Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area + "<br><br><b>Initiatives</b><br>";
@@ -531,6 +547,8 @@
                             icon:	new L.NumberedDivIcon({number: size, iconUrl : iconShade})        										});
 
 //marker.bindPopup("Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area);
+
+                            saintvincentPopupText += "<div class='organization-name'><a href='#' onclick='infoSlideDown(this);return false;'><b>" + name + "</b></a><p style='display:none;' class='organization-content'>" + "Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area + "</p></div><br>";
 
                             marker.on('click', function () {
 
@@ -574,6 +592,8 @@
 
 //marker.bindPopup("Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area);
 
+                            dominicaPopupText += "<div class='organization-name'><a href='#' onclick='infoSlideDown(this);return false;'><b>" + name + "</b></a><p style='display:none;' class='organization-content'>" + "Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area + "</p></div><br>";
+
                             marker.on('click', function () {
 
                                 preContent = "<b>Stakeholder</b><br><br>Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area + "<br><br><b>Initiatives</b><br>";
@@ -615,6 +635,8 @@
                             icon:	new L.NumberedDivIcon({number: size, iconUrl : iconShade})        										});
 
 //marker.bindPopup("Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area);
+
+                            antiguaPopupText += "<div class='organization-name'><a href='#' onclick='infoSlideDown(this);return false;'><b>" + name + "</b></a><p style='display:none;' class='organization-content'>" + "Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area + "</p></div><br>";
 
                             marker.on('click', function () {
 
@@ -658,6 +680,8 @@
 
 //marker.bindPopup("Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area);
 
+                            trinidadPopupText += "<div class='organization-name'><a href='#' onclick='infoSlideDown(this);return false;'><b>" + name + "</b></a><p style='display:none;' class='organization-content'>" + "Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area + "</p></div><br>";
+
                             marker.on('click', function () {
 
                                 preContent = "<b>Stakeholder</b><br><br>Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area + "<br><br><b>Initiatives</b><br>";
@@ -699,6 +723,8 @@
                             icon:	new L.NumberedDivIcon({number: size, iconUrl : iconShade})        										});
 
 //marker.bindPopup("Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area);
+
+                            saintkittsPopupText += "<div class='organization-name'><a href='#' onclick='infoSlideDown(this);return false;'><b>" + name + "</b></a><p style='display:none;' class='organization-content'>" + "Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area + "</p></div><br>";
 
                             marker.on('click', function () {
 
@@ -742,6 +768,8 @@
 
 //marker.bindPopup("Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area);
 
+                            belizePopupText += "<div class='organization-name'><a href='#' onclick='infoSlideDown(this);return false;'><b>" + name + "</b></a><p style='display:none;' class='organization-content'>" + "Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area + "</p></div><br>";
+
                             marker.on('click', function () {
 
                                 preContent = "<b>Stakeholder</b><br><br>Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area + "<br><br><b>Initiatives</b><br>";
@@ -783,6 +811,8 @@
                             icon:	new L.NumberedDivIcon({number: size, iconUrl : iconShade})        										});
 
 //marker.bindPopup("Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area);
+
+                            guyanaPopupText += "<div class='organization-name'><a href='#' onclick='infoSlideDown(this);return false;'><b>" + name + "</b></a><p style='display:none;' class='organization-content'>" + "Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area + "</p></div><br>";
 
                             marker.on('click', function () {
 
@@ -826,6 +856,8 @@
 
 //marker.bindPopup("Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area);
 
+                            surinamePopupText += "<div class='organization-name'><a href='#' onclick='infoSlideDown(this);return false;'><b>" + name + "</b></a><p style='display:none;' class='organization-content'>" + "Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area + "</p></div><br>";
+
                             marker.on('click', function () {
 
                                 preContent = "<b>Stakeholder</b><br><br>Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area + "<br><br><b>Initiatives</b><br>";
@@ -867,6 +899,8 @@
                             icon:	new L.NumberedDivIcon({number: size, iconUrl : iconShade})        										});
 
 //marker.bindPopup("Name : " + name + "<br><br>Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area);
+
+                            grenadaPopupText += "<div class='organization-name'><a href='#' onclick='infoSlideDown(this);return false;'><b>" + name + "</b></a><p style='display:none;' class='organization-content'>" + "Type : " + type + "<br><br>Website : " + url + "<br><br>Functional Area : " + functional_area + "</p></div><br>";
 
                             marker.on('click', function () {
 
@@ -963,7 +997,40 @@ ss
 
 <script>
 
-    var jamaicanPopupText = "<b>Organizations</b><br><br>";
+    var geocodesData = null;
+
+    $.ajax({
+
+        type: "GET",
+
+        url: encodeURI("http://localhost/stakeholdermap/public/geocodesJSON"),
+
+        dataType: "json",
+
+        success: function (data) {
+
+            geocodesData = data.results;
+
+        }
+
+    });
+
+    function geoCode (countryname) {
+
+        //alert(geocodesData.length);
+
+        for (var i = 0; i < geocodesData.length; i++) {
+
+            if (geocodesData[i].countryname == countryname) {
+                //alert(geocodesData[i].latitude + ", " + geocodesData[i].longitude);
+                return geocodesData[i].latitude + ", " + geocodesData[i].longitude;
+            }
+
+        }
+
+    }
+
+            var jamaicanPopupText = barbadosPopupText = bahamasPopupText = cubaPopupText = antiguaPopupText = haitiPopupText = anguillaPopupText = grenadaPopupText = montserratPopupText  = saintluciaPopupText  = saintvincentPopupText  = trinidadPopupText  = dominicaPopupText  = saintkittsPopupText = belizePopupText = guyanaPopupText = surinamePopupText = grenadaPopupText = "<b>Organizations</b><br><br>";
 
     var jamaica = new L.MarkerClusterGroup({maxClusterRadius: 60,
         iconCreateFunction: null,
@@ -983,7 +1050,7 @@ ss
             }
 
         )
-            .setLatLng([18.10958, -77.297508])
+            .setLatLng([geoCode("Jamaica").split(",")[0], geoCode("Jamaica").split(",")[1]])
             .setContent(jamaicanPopupText)
             .openOn(map);
     });
@@ -995,7 +1062,20 @@ ss
         zoomToBoundsOnClick: false});
 
     barbados.on('clusterclick', function (a) {
-        a.layer.spiderfy();
+        //a.layer.spiderfy();
+        //set up a standalone popup (use a popup as a layer)
+        var popup = L.popup(
+
+            {
+
+                maxHeight: 300,
+
+            }
+
+        )
+            .setLatLng([geoCode("Barbados").split(",")[0], geoCode("Barbados").split(",")[1]])
+            .setContent(barbadosPopupText)
+            .openOn(map);
     });
 
     var bahamas = new L.MarkerClusterGroup({maxClusterRadius: 60,
@@ -1005,7 +1085,20 @@ ss
         zoomToBoundsOnClick: false});
 
     bahamas.on('clusterclick', function (a) {
-        a.layer.spiderfy();
+        //a.layer.spiderfy();
+        //set up a standalone popup (use a popup as a layer)
+        var popup = L.popup(
+
+            {
+
+                maxHeight: 300,
+
+            }
+
+        )
+            .setLatLng([geoCode("Bahamas").split(",")[0], geoCode("Bahamas").split(",")[1]])
+            .setContent(bahamasPopupText)
+            .openOn(map);
     });
 
     var cuba = new L.MarkerClusterGroup({maxClusterRadius: 60,
@@ -1015,7 +1108,20 @@ ss
         zoomToBoundsOnClick: false});
 
     cuba.on('clusterclick', function (a) {
-        a.layer.spiderfy();
+        //a.layer.spiderfy();
+        //set up a standalone popup (use a popup as a layer)
+        var popup = L.popup(
+
+            {
+
+                maxHeight: 300,
+
+            }
+
+        )
+            .setLatLng([geoCode("Cuba").split(",")[0], geoCode("Cuba").split(",")[1]])
+            .setContent(cubaPopupText)
+            .openOn(map);
     });
 
     var haiti = new L.MarkerClusterGroup({maxClusterRadius: 60,
@@ -1025,7 +1131,20 @@ ss
         zoomToBoundsOnClick: false});
 
     haiti.on('clusterclick', function (a) {
-        a.layer.spiderfy();
+        //a.layer.spiderfy();
+        //set up a standalone popup (use a popup as a layer)
+        var popup = L.popup(
+
+            {
+
+                maxHeight: 300,
+
+            }
+
+        )
+            .setLatLng([geoCode("Haiti").split(",")[0], geoCode("Haiti").split(",")[1]])
+            .setContent(haitiPopupText)
+            .openOn(map);
     });
 
     var anguilla = new L.MarkerClusterGroup({maxClusterRadius: 60,
@@ -1035,7 +1154,20 @@ ss
         zoomToBoundsOnClick: false});
 
     anguilla.on('clusterclick', function (a) {
-        a.layer.spiderfy();
+        //a.layer.spiderfy();
+        //set up a standalone popup (use a popup as a layer)
+        var popup = L.popup(
+
+            {
+
+                maxHeight: 300,
+
+            }
+
+        )
+            .setLatLng([geoCode("Anguilla").split(",")[0], geoCode("Anguilla").split(",")[1]])
+            .setContent(anguillaPopupText)
+            .openOn(map);
     });
 
 
@@ -1047,7 +1179,20 @@ ss
         zoomToBoundsOnClick: false});
 
     grenada.on('clusterclick', function (a) {
-        a.layer.spiderfy();
+        //a.layer.spiderfy();
+        //set up a standalone popup (use a popup as a layer)
+        var popup = L.popup(
+
+            {
+
+                maxHeight: 300,
+
+            }
+
+        )
+            .setLatLng([geoCode("Grenada").split(",")[0], geoCode("Grenada").split(",")[1]])
+            .setContent(grenadaPopupText)
+            .openOn(map);
     });
 
     var montserrat = new L.MarkerClusterGroup({maxClusterRadius: 60,
@@ -1057,7 +1202,20 @@ ss
         zoomToBoundsOnClick: false});
 
     montserrat.on('clusterclick', function (a) {
-        a.layer.spiderfy();
+        //a.layer.spiderfy();
+        //set up a standalone popup (use a popup as a layer)
+        var popup = L.popup(
+
+            {
+
+                maxHeight: 300,
+
+            }
+
+        )
+            .setLatLng([geoCode("Montserrat").split(",")[0], geoCode("Montserrat").split(",")[1]])
+            .setContent(montserratPopupText)
+            .openOn(map);
     });
 
     var saintlucia = new L.MarkerClusterGroup({maxClusterRadius: 60,
@@ -1067,7 +1225,20 @@ ss
         zoomToBoundsOnClick: false});
 
     saintlucia.on('clusterclick', function (a) {
-        a.layer.spiderfy();
+        //a.layer.spiderfy();
+        //set up a standalone popup (use a popup as a layer)
+        var popup = L.popup(
+
+            {
+
+                maxHeight: 300,
+
+            }
+
+        )
+            .setLatLng([geoCode("Saint Lucia").split(",")[0], geoCode("Saint Lucia").split(",")[1]])
+            .setContent(saintluciaPopupText)
+            .openOn(map);
     });
 
     var saintvincent = new L.MarkerClusterGroup({maxClusterRadius: 60,
@@ -1077,7 +1248,20 @@ ss
         zoomToBoundsOnClick: false});
 
     saintvincent.on('clusterclick', function (a) {
-        a.layer.spiderfy();
+        //a.layer.spiderfy();
+        //set up a standalone popup (use a popup as a layer)
+        var popup = L.popup(
+
+            {
+
+                maxHeight: 300,
+
+            }
+
+        )
+            .setLatLng([geoCode("Saint Vincent").split(",")[0], geoCode("Saint Vincent").split(",")[1]])
+            .setContent(saintvincentPopupText)
+            .openOn(map);
     });
 
     var trinidad = new L.MarkerClusterGroup({maxClusterRadius: 60,
@@ -1087,7 +1271,20 @@ ss
         zoomToBoundsOnClick: false});
 
     trinidad.on('clusterclick', function (a) {
-        a.layer.spiderfy();
+        //a.layer.spiderfy();
+        //set up a standalone popup (use a popup as a layer)
+        var popup = L.popup(
+
+            {
+
+                maxHeight: 300,
+
+            }
+
+        )
+            .setLatLng([geoCode("Trinidad and Tobago").split(",")[0], geoCode("Trinidad and Tobago").split(",")[1]])
+            .setContent(trinidadPopupText)
+            .openOn(map);
     });
 
     var dominica = new L.MarkerClusterGroup({maxClusterRadius: 60,
@@ -1097,7 +1294,20 @@ ss
         zoomToBoundsOnClick: false});
 
     dominica.on('clusterclick', function (a) {
-        a.layer.spiderfy();
+        //a.layer.spiderfy();
+        //set up a standalone popup (use a popup as a layer)
+        var popup = L.popup(
+
+            {
+
+                maxHeight: 300,
+
+            }
+
+        )
+            .setLatLng([geoCode("Dominica").split(",")[0], geoCode("Dominica").split(",")[1]])
+            .setContent(dominicaPopupText)
+            .openOn(map);
     });
 
     var antigua = new L.MarkerClusterGroup({maxClusterRadius: 60,
@@ -1107,7 +1317,20 @@ ss
         zoomToBoundsOnClick: false});
 
     antigua.on('clusterclick', function (a) {
-        a.layer.spiderfy();
+        //a.layer.spiderfy();
+        //set up a standalone popup (use a popup as a layer)
+        var popup = L.popup(
+
+            {
+
+                maxHeight: 300,
+
+            }
+
+        )
+            .setLatLng([geoCode("Antigua").split(",")[0], geoCode("Antigua").split(",")[1]])
+            .setContent(antiguaPopupText)
+            .openOn(map);
     });
 
     var saintkitts = new L.MarkerClusterGroup({maxClusterRadius: 60,
@@ -1117,7 +1340,20 @@ ss
         zoomToBoundsOnClick: false});
 
     saintkitts.on('clusterclick', function (a) {
-        a.layer.spiderfy();
+        //a.layer.spiderfy();
+        //set up a standalone popup (use a popup as a layer)
+        var popup = L.popup(
+
+            {
+
+                maxHeight: 300,
+
+            }
+
+        )
+            .setLatLng([geoCode("Saint Kitts").split(",")[0], geoCode("Saint Kitts").split(",")[1]])
+            .setContent(saintkittsPopupText)
+            .openOn(map);
     });
 
     var belize = new L.MarkerClusterGroup({maxClusterRadius: 60,
@@ -1127,7 +1363,20 @@ ss
         zoomToBoundsOnClick: false});
 
     belize.on('clusterclick', function (a) {
-        a.layer.spiderfy();
+        //a.layer.spiderfy();
+        //set up a standalone popup (use a popup as a layer)
+        var popup = L.popup(
+
+            {
+
+                maxHeight: 300,
+
+            }
+
+        )
+            .setLatLng([geoCode("Belize").split(",")[0], geoCode("Belize").split(",")[1]])
+            .setContent(belizePopupText)
+            .openOn(map);
     });
 
     var guyana = new L.MarkerClusterGroup({maxClusterRadius: 60,
@@ -1137,7 +1386,20 @@ ss
         zoomToBoundsOnClick: false});
 
     guyana.on('clusterclick', function (a) {
-        a.layer.spiderfy();
+        //a.layer.spiderfy();
+        //set up a standalone popup (use a popup as a layer)
+        var popup = L.popup(
+
+            {
+
+                maxHeight: 300,
+
+            }
+
+        )
+            .setLatLng([geoCode("Guyana").split(",")[0], geoCode("Guyana").split(",")[1]])
+            .setContent(guyanaPopupText)
+            .openOn(map);
     });
 
     var suriname = new L.MarkerClusterGroup({maxClusterRadius: 60,
@@ -1147,7 +1409,20 @@ ss
         zoomToBoundsOnClick: false});
 
     suriname.on('clusterclick', function (a) {
-        a.layer.spiderfy();
+        //a.layer.spiderfy();
+        //set up a standalone popup (use a popup as a layer)
+        var popup = L.popup(
+
+            {
+
+                maxHeight: 300,
+
+            }
+
+        )
+            .setLatLng([geoCode("Suriname").split(",")[0], geoCode("Suriname").split(",")[1]])
+            .setContent(surinamePopupText)
+            .openOn(map);
     });
 
     var grenada = new L.MarkerClusterGroup({maxClusterRadius: 60,
@@ -1157,7 +1432,20 @@ ss
         zoomToBoundsOnClick: false});
 
     grenada.on('clusterclick', function (a) {
-        a.layer.spiderfy();
+        //a.layer.spiderfy();
+        //set up a standalone popup (use a popup as a layer)
+        var popup = L.popup(
+
+            {
+
+                maxHeight: 300,
+
+            }
+
+        )
+            .setLatLng([geoCode("Grenada").split(",")[0], geoCode("Grenada").split(",")[1]])
+            .setContent(grenadaPopupText)
+            .openOn(map);
     });
 
 

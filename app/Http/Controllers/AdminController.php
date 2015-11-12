@@ -57,6 +57,14 @@ class AdminController extends Controller {
 
     }
 
+    function getAllGeocodeJSON () {
+
+        $list = Geocode::all();
+
+        return '{"results":' . $list . '}';
+
+    }
+
     function addStakeholderPage () {
 
         $list = Stakeholder::distinct()->select('country')->get();
