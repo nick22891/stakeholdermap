@@ -28,6 +28,24 @@
 
     <script>
 
+        var marker = null;
+
+        var bankArray = Array(0);
+
+        var govArray = Array(0);
+
+        var eduArray = Array(0);
+
+        var ngoArray = Array(0);
+
+        var ictArray = Array(0);
+
+        var mnoArray = Array(0);
+
+        var mediaArray = Array(0);
+
+        //alert(bankArray[1]);
+
         var iconShade = "http://www.argentmac.com/devca/icons/Aliz.jpg";
 
         var preContent = "";
@@ -921,7 +939,7 @@
                                             eventname = data.results[i].name;
 
                                             preContent = "" + preContent + "<br><b>" + (i + 1) + ".</b> " + eventname + " (" + data.results[i].pivot.type + ")<br><br>Year : " + data.results[i].date + "<br><br>Url : " + data.results[i].initiative_url + "<br>";
-ss
+
                                         }
 
                                         sidebar.show();
@@ -941,6 +959,20 @@ ss
 
 
                     }
+
+                    if (type == "Bank/Investment/Consulting") bankArray[bankArray.length] = marker;
+
+                    if (type == "Government") govArray[govArray.length] = marker;
+
+                    if (type == "Education/Research") eduArray[eduArray.length] = marker;
+
+                    if (type == "NGO") ngoArray[ngoArray.length] = marker;
+
+                    if (type == "ICT Services") ictArray[ictArray.length] = marker;
+
+                    if (type == "MNO/Telecommunications") mnoArray[mnoArray.length] = marker;
+
+                    if (type == "Media/Marketing") mediaArray[mediaArray.length] = marker;
 
                     //
 
@@ -1017,7 +1049,22 @@ ss
 
     <input checked type="checkbox" name="country" id="guyana" class="country-boxes">Guyana<br>
 
-    <input checked type="checkbox" name="country" id="suriname" class="country-boxes">Suriname<br>
+    <input checked type="checkbox" name="country" id="suriname" class="country-boxes">Suriname<br><br>
+
+    <b>Filter by Type : </b><br>
+    <input checked type="checkbox" name="country" id="bankArray" class="type-boxes">Bank<br>
+
+    <input checked type="checkbox" name="country" id="govArray" class="type-boxes">Government<br>
+
+    <input checked type="checkbox" name="country" id="eduArray" class="type-boxes">Education<br>
+
+    <input checked type="checkbox" name="country" id="ngoArray" class="type-boxes">NGO<br>
+
+    <input checked type="checkbox" name="country" id="ictArray" class="type-boxes">ICT Services<br>
+
+    <input checked type="checkbox" name="country" id="mnoArray" class="type-boxes">MNO<br>
+
+    <input checked type="checkbox" name="country" id="mediaArray" class="type-boxes">Media & Marketing<br>
 
 
 </div>
@@ -1598,7 +1645,42 @@ ss
 
         });
 
+        $(".type-boxes").click(function (event) {
+
+            if (!$("#" + event.target.id).prop("checked")) {
+
+                for (var x = 0;x < (window[event.target.id]).length;x++) {
+
+                    jamaica.removeLayer((window[event.target.id])[x]);
+
+                    //cuba.removeLayer((window[event.target.id])[x]);
+
+                }
+
+            }
+
+            else {
+
+                for (var x = 0;x < (window[event.target.id]).length;x++) {
+
+                    jamaica.addLayer((window[event.target.id])[x]);
+
+                    //cuba.addLayer((window[event.target.id])[x]);
+
+                }
+
+            }
+
+        });
+
     });
+
+
+    /*for (var x = 0;x < eduArray.length;x++) {
+
+        jamaica.removeLayer(eduArray[x]);
+
+    }*/
 
     function infoSlideDown (element) {
 
