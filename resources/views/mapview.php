@@ -58,7 +58,7 @@
 
                 type: "GET",
 
-                url: "http://localhost/stakeholdermap/public/stakeholdersJSON",
+                url: "http://54.68.79.59/stakeholdermap/public/stakeholdersJSON",
 
                 dataType : "json",
 
@@ -126,7 +126,7 @@
 
                 type : "GET",
 
-                url: encodeURI("http://localhost/stakeholdermap/public/geocodesJSON/" + country),
+                url: encodeURI("http://54.68.79.59/stakeholdermap/public/geocodesJSON/" + country),
 
                 dataType : "json",
 
@@ -177,7 +177,7 @@
 
                                     type: "GET",
 
-                                    url: encodeURI("http://localhost/stakeholdermap/public/initiativesJSON/" + id),//sends stakeholder id
+                                    url: encodeURI("http://54.68.79.59/stakeholdermap/public/initiativesJSON/" + id),//sends stakeholder id
 
                                     dataType : "json",
 
@@ -222,7 +222,7 @@
 
                                     type: "GET",
 
-                                    url: encodeURI("http://localhost/stakeholdermap/public/initiativesJSON/" + id),
+                                    url: encodeURI("http://54.68.79.59/stakeholdermap/public/initiativesJSON/" + id),
 
                                     dataType : "json",
 
@@ -267,7 +267,7 @@
 
                                     type: "GET",
 
-                                    url: encodeURI("http://localhost/stakeholdermap/public/initiativesJSON/" + id),
+                                    url: encodeURI("http://54.68.79.59/stakeholdermap/public/initiativesJSON/" + id),
 
                                     dataType : "json",
 
@@ -311,7 +311,7 @@
 
                                     type: "GET",
 
-                                    url: encodeURI("http://localhost/stakeholdermap/public/initiativesJSON/" + id),
+                                    url: encodeURI("http://54.68.79.59/stakeholdermap/public/initiativesJSON/" + id),
 
                                     dataType : "json",
 
@@ -356,7 +356,7 @@
 
                                     type: "GET",
 
-                                    url: encodeURI("http://localhost/stakeholdermap/public/initiativesJSON/" + id),
+                                    url: encodeURI("http://54.68.79.59/stakeholdermap/public/initiativesJSON/" + id),
 
                                     dataType : "json",
 
@@ -400,7 +400,7 @@
 
                                     type: "GET",
 
-                                    url: encodeURI("http://localhost/stakeholdermap/public/initiativesJSON/" + id),
+                                    url: encodeURI("http://54.68.79.59/stakeholdermap/public/initiativesJSON/" + id),
 
                                     dataType : "json",
 
@@ -444,7 +444,7 @@
 
                                     type: "GET",
 
-                                    url: encodeURI("http://localhost/stakeholdermap/public/initiativesJSON/" + id),
+                                    url: encodeURI("http://54.68.79.59/stakeholdermap/public/initiativesJSON/" + id),
 
                                     dataType : "json",
 
@@ -488,7 +488,7 @@
 
                                     type: "GET",
 
-                                    url: encodeURI("http://localhost/stakeholdermap/public/initiativesJSON/" + id),
+                                    url: encodeURI("http://54.68.79.59/stakeholdermap/public/initiativesJSON/" + id),
 
                                     dataType : "json",
 
@@ -532,7 +532,7 @@
 
                                     type: "GET",
 
-                                    url: encodeURI("http://localhost/stakeholdermap/public/initiativesJSON/" + id),
+                                    url: encodeURI("http://54.68.79.59/stakeholdermap/public/initiativesJSON/" + id),
 
                                     dataType : "json",
 
@@ -576,7 +576,7 @@
 
                                     type: "GET",
 
-                                    url: encodeURI("http://localhost/stakeholdermap/public/initiativesJSON/" + id),
+                                    url: encodeURI("http://54.68.79.59/stakeholdermap/public/initiativesJSON/" + id),
 
                                     dataType : "json",
 
@@ -620,7 +620,7 @@
 
                                     type: "GET",
 
-                                    url: encodeURI("http://localhost/stakeholdermap/public/initiativesJSON/" + id),
+                                    url: encodeURI("http://54.68.79.59/stakeholdermap/public/initiativesJSON/" + id),
 
                                     dataType : "json",
 
@@ -664,7 +664,7 @@
 
                                     type: "GET",
 
-                                    url: encodeURI("http://localhost/stakeholdermap/public/initiativesJSON/" + id),
+                                    url: encodeURI("http://54.68.79.59/stakeholdermap/public/initiativesJSON/" + id),
 
                                     dataType : "json",
 
@@ -708,7 +708,7 @@
 
                                     type: "GET",
 
-                                    url: encodeURI("http://localhost/stakeholdermap/public/initiativesJSON/" + id),
+                                    url: encodeURI("http://54.68.79.59/stakeholdermap/public/initiativesJSON/" + id),
 
                                     dataType : "json",
 
@@ -752,7 +752,7 @@
 
                                     type: "GET",
 
-                                    url: encodeURI("http://localhost/stakeholdermap/public/initiativesJSON/" + id),
+                                    url: encodeURI("http://54.68.79.59/stakeholdermap/public/initiativesJSON/" + id),
 
                                     dataType : "json",
 
@@ -796,7 +796,7 @@
 
                                     type: "GET",
 
-                                    url: encodeURI("http://localhost/stakeholdermap/public/initiativesJSON/" + id),
+                                    url: encodeURI("http://54.68.79.59/stakeholdermap/public/initiativesJSON/" + id),
 
                                     dataType : "json",
 
@@ -840,7 +840,7 @@
 
                                     type: "GET",
 
-                                    url: encodeURI("http://localhost/stakeholdermap/public/initiativesJSON/" + id),
+                                    url: encodeURI("http://54.68.79.59/stakeholdermap/public/initiativesJSON/" + id),
 
                                     dataType : "json",
 
@@ -884,7 +884,7 @@
 
                                     type: "GET",
 
-                                    url: encodeURI("http://localhost/stakeholdermap/public/initiativesJSON/" + id),
+                                    url: encodeURI("http://54.68.79.59/stakeholdermap/public/initiativesJSON/" + id),
 
                                     dataType : "json",
 
@@ -928,7 +928,7 @@
 
                                     type: "GET",
 
-                                    url: encodeURI("http://localhost/stakeholdermap/public/initiativesJSON/" + id),
+                                    url: encodeURI("http://54.68.79.59/stakeholdermap/public/initiativesJSON/" + id),
 
                                     dataType : "json",
 
@@ -1085,7 +1085,7 @@
 
         type: "GET",
 
-        url: encodeURI("http://localhost/stakeholdermap/public/geocodesJSON"),
+        url: encodeURI("http://54.68.79.59/stakeholdermap/public/geocodesJSON"),
 
         dataType: "json",
 

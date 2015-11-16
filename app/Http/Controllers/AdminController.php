@@ -101,7 +101,7 @@ class AdminController extends Controller {
 
         $newstakeholder = Stakeholder::create(['name' => $name, 'type' => $type, 'functional_area' => $functional_area, 'url' => $url, 'country' => $country]);
 
-        return "<script>window.location = 'http://localhost/stakeholdermap/public/stakeholders'</script>";
+        return "<script>window.location = 'http://54.68.79.59/stakeholdermap/public/stakeholders'</script>";
 
     }
 
@@ -146,7 +146,7 @@ class AdminController extends Controller {
 
         }
 
-        return "<script>window.location = 'http://localhost/stakeholdermap/public/initiatives'</script>";
+        return "<script>window.location = 'http://54.68.79.59/stakeholdermap/public/initiatives'</script>";
 
     }
 
@@ -158,7 +158,7 @@ class AdminController extends Controller {
 
         $stakeholder->delete();
 
-        return "<script>window.location = 'http://localhost/stakeholdermap/public/stakeholders'</script>";
+        return "<script>window.location = 'http://54.68.79.59/stakeholdermap/public/stakeholders'</script>";
 
     }
 
@@ -170,7 +170,7 @@ class AdminController extends Controller {
 
         $initiative->delete();
 
-        return "<script>window.location = 'http://localhost/stakeholdermap/public/initiatives'</script>";
+        return "<script>window.location = 'http://54.68.79.59/stakeholdermap/public/initiatives'</script>";
 
     }
 

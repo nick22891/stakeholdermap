@@ -2,184 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62fe9607-158f-4995-8739-f0073a4a8515" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Handlers/Commands/.gitkeep" afterPath="$PROJECT_DIR$/app/Handlers/Commands/.gitkeep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Handlers/Events/.gitkeep" afterPath="$PROJECT_DIR$/app/Handlers/Events/.gitkeep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/.gitkeep" afterPath="$PROJECT_DIR$/database/migrations/.gitkeep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/.gitkeep" afterPath="$PROJECT_DIR$/database/seeds/.gitkeep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/vendor/.gitkeep" afterPath="$PROJECT_DIR$/resources/views/vendor/.gitkeep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/favicon.ico" afterPath="$PROJECT_DIR$/public/favicon.ico" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.env.example" afterPath="$PROJECT_DIR$/.env.example" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitattributes" afterPath="$PROJECT_DIR$/.gitattributes" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/.gitignore" afterPath="$PROJECT_DIR$/database/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/.gitignore" afterPath="$PROJECT_DIR$/storage/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/app/.gitignore" afterPath="$PROJECT_DIR$/storage/app/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/.gitignore" afterPath="$PROJECT_DIR$/storage/framework/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/cache/.gitignore" afterPath="$PROJECT_DIR$/storage/framework/cache/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/sessions/.gitignore" afterPath="$PROJECT_DIR$/storage/framework/sessions/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/views/.gitignore" afterPath="$PROJECT_DIR$/storage/framework/views/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/logs/.gitignore" afterPath="$PROJECT_DIR$/storage/logs/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/.htaccess" afterPath="$PROJECT_DIR$/public/.htaccess" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/errors/503.blade.php" afterPath="$PROJECT_DIR$/resources/views/errors/503.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/BusServiceProvider.php" afterPath="$PROJECT_DIR$/app/Providers/BusServiceProvider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Commands/Command.php" afterPath="$PROJECT_DIR$/app/Commands/Command.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/ConfigServiceProvider.php" afterPath="$PROJECT_DIR$/app/Providers/ConfigServiceProvider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Events/Event.php" afterPath="$PROJECT_DIR$/app/Events/Event.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" afterPath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/ExampleTest.php" afterPath="$PROJECT_DIR$/tests/ExampleTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Geocode.php" afterPath="$PROJECT_DIR$/app/Geocode.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Initiative.php" afterPath="$PROJECT_DIR$/app/Initiative.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Console/Commands/Inspire.php" afterPath="$PROJECT_DIR$/app/Console/Commands/Inspire.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Console/Kernel.php" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Kernel.php" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/L.Control.Sidebar.css" afterPath="$PROJECT_DIR$/public/css/L.Control.Sidebar.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/L.Control.Sidebar.js" afterPath="$PROJECT_DIR$/public/js/L.Control.Sidebar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/L.Control.Sidebar.scss" afterPath="$PROJECT_DIR$/public/css/L.Control.Sidebar.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/PasswordController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/PasswordController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" afterPath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Services/Registrar.php" afterPath="$PROJECT_DIR$/app/Services/Registrar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Requests/Request.php" afterPath="$PROJECT_DIR$/app/Http/Requests/Request.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Stakeholder.php" afterPath="$PROJECT_DIR$/app/Stakeholder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/TestCase.php" afterPath="$PROJECT_DIR$/tests/TestCase.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/addinitiatives.php" afterPath="$PROJECT_DIR$/resources/views/addinitiatives.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/addstakeholders.php" afterPath="$PROJECT_DIR$/resources/views/addstakeholders.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/alerts.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/alerts.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/alerts.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/alerts.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/app.blade.php" afterPath="$PROJECT_DIR$/resources/views/app.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/app.css" afterPath="$PROJECT_DIR$/public/css/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/app.less" afterPath="$PROJECT_DIR$/resources/assets/less/app.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/app.php" afterPath="$PROJECT_DIR$/bootstrap/app.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/app.php" afterPath="$PROJECT_DIR$/config/app.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/artisan" afterPath="$PROJECT_DIR$/artisan" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/auth.php" afterPath="$PROJECT_DIR$/config/auth.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap/autoload.php" afterPath="$PROJECT_DIR$/bootstrap/autoload.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/background-variant.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/background-variant.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/badges.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/badges.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/bootstrap.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/bootstrap.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/border-radius.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/border-radius.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/breadcrumbs.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/breadcrumbs.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/button-groups.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/button-groups.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/buttons.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/buttons.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/buttons.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/buttons.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/cache.php" afterPath="$PROJECT_DIR$/config/cache.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/carousel.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/carousel.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/center-block.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/center-block.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/clearfix.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/clearfix.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/close.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/close.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/code.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/code.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/compile.php" afterPath="$PROJECT_DIR$/config/compile.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/component-animations.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/component-animations.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.php" afterPath="$PROJECT_DIR$/config/database.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/dropdowns.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/dropdowns.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/filesystems.php" afterPath="$PROJECT_DIR$/config/filesystems.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/forms.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/forms.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/forms.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/forms.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/public/fonts/glyphicons-halflings-regular.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/glyphicons.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/glyphicons.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/gradients.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/gradients.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/grid-framework.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/grid-framework.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/grid.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/grid.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/grid.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/grid.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/hide-text.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/hide-text.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/home.blade.php" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/image.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/image.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.php" afterPath="$PROJECT_DIR$/public/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/initiatives.js" afterPath="$PROJECT_DIR$/public/js/initiatives.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/initiatives.php" afterPath="$PROJECT_DIR$/resources/views/initiatives.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/input-groups.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/input-groups.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/jumbotron.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/jumbotron.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/labels.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/labels.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/labels.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/labels.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/list-group.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/list-group.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/list-group.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/list-group.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/mail.php" afterPath="$PROJECT_DIR$/config/mail.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-kernel/Symfony/Component/HttpKernel/Tests/Fragment/FragmentHandlerTest.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-kernel/Symfony/Component/HttpKernel/Tests/Fragment/FragmentHandlerTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Request.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Request.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/mapview.php" afterPath="$PROJECT_DIR$/resources/views/mapview.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/media.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/media.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/modals.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/modals.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/nav-divider.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/nav-divider.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/nav-vertical-align.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/nav-vertical-align.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/navbar.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/navbar.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/navs.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/navs.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/normalize.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/normalize.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/opacity.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/opacity.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/pager.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/pager.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/pagination.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/pagination.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/pagination.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/pagination.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/lang/en/pagination.php" afterPath="$PROJECT_DIR$/resources/lang/en/pagination.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/panels.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/panels.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/panels.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/panels.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/auth/password.blade.php" afterPath="$PROJECT_DIR$/resources/views/auth/password.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/emails/password.blade.php" afterPath="$PROJECT_DIR$/resources/views/emails/password.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/lang/en/passwords.php" afterPath="$PROJECT_DIR$/resources/lang/en/passwords.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/phpspec.yml" afterPath="$PROJECT_DIR$/phpspec.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/phpunit.xml" afterPath="$PROJECT_DIR$/phpunit.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/popovers.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/popovers.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/print.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/print.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/progress-bar.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/progress-bar.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/progress-bars.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/progress-bars.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/queue.php" afterPath="$PROJECT_DIR$/config/queue.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/reset-filter.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/reset-filter.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/auth/reset.blade.php" afterPath="$PROJECT_DIR$/resources/views/auth/reset.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/resize.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/resize.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/responsive-embed.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/responsive-embed.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/responsive-utilities.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/responsive-utilities.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/responsive-visibility.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/responsive-visibility.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/robots.txt" afterPath="$PROJECT_DIR$/public/robots.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/scaffolding.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/scaffolding.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.php" afterPath="$PROJECT_DIR$/server.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/services.php" afterPath="$PROJECT_DIR$/config/services.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/session.php" afterPath="$PROJECT_DIR$/config/session.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/sidebar.css" afterPath="$PROJECT_DIR$/public/css/sidebar.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/sidebar.js" afterPath="$PROJECT_DIR$/public/js/sidebar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/size.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/size.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/stakeholdermap.iml" afterPath="$PROJECT_DIR$/.idea/stakeholdermap.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/stakeholders.php" afterPath="$PROJECT_DIR$/resources/views/stakeholders.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/tab-focus.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/tab-focus.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/table-row.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/table-row.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/tables.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/tables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/text-emphasis.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/text-emphasis.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/text-overflow.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/text-overflow.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/theme.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/theme.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/thumbnails.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/thumbnails.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/tooltip.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/tooltip.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/type.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/type.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/utilities.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/utilities.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/lang/en/validation.php" afterPath="$PROJECT_DIR$/resources/lang/en/validation.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/variables.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/variables.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/vendor-prefixes.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/mixins/vendor-prefixes.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/view.php" afterPath="$PROJECT_DIR$/config/view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/bootstrap/wells.less" afterPath="$PROJECT_DIR$/resources/assets/less/bootstrap/wells.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="stakeholdermap.iws" />
@@ -213,8 +39,8 @@
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.416667" vertical-offset="41" max-vertical-offset="735">
-              <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="41" max-vertical-offset="765">
+              <caret line="25" column="50" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
               <folding>
                 <element signature="e#7#392#0#PHP" expanded="true" />
               </folding>
@@ -225,8 +51,18 @@
       <file leaf-file-name="database.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Downloads/database.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="465" max-vertical-offset="1740">
+            <state vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="1740">
               <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stakeholders.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/stakeholders.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="2115">
+              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -235,8 +71,8 @@
       <file leaf-file-name="AdminController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.2083335" vertical-offset="1276" max-vertical-offset="4485">
-              <caret line="95" column="50" selection-start-line="95" selection-start-column="50" selection-end-line="95" selection-end-column="50" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="435" max-vertical-offset="4605">
+              <caret line="53" column="63" selection-start-line="53" selection-start-column="63" selection-end-line="53" selection-end-column="63" />
               <folding>
                 <element signature="e#39#58#0#PHP" expanded="true" />
               </folding>
@@ -244,21 +80,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="addinitiatives.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/addinitiatives.php">
+      <file leaf-file-name="initiatives.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/initiatives.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="570" max-vertical-offset="1950">
-              <caret line="127" column="0" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="2027" max-vertical-offset="4080">
+              <caret line="221" column="52" selection-start-line="221" selection-start-column="52" selection-end-line="221" selection-end-column="52" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="server.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server.php">
+      <file leaf-file-name="addinitiatives.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/addinitiatives.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="1950">
+              <caret line="14" column="41" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -267,40 +103,48 @@
       <file leaf-file-name="database.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="645" max-vertical-offset="1965">
+            <state vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="1965">
               <caret line="62" column="30" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Geocode.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Geocode.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="510">
-              <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="26" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mapview.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="mapview.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/mapview.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-71.31373" vertical-offset="15053" max-vertical-offset="18870">
-              <caret line="1246" column="43" selection-start-line="1246" selection-start-column="37" selection-end-line="1246" selection-end-column="43" />
+            <state vertical-scroll-proportion="0.6700288" vertical-offset="675" max-vertical-offset="25530">
+              <caret line="76" column="40" selection-start-line="76" selection-start-column="40" selection-end-line="76" selection-end-column="40" />
               <folding>
                 <element signature="e#6#86#0#PHP" expanded="true" />
+                <marker date="1447688748000" expanded="true" signature="4880:4893" placeholder="..." />
+                <marker date="1447688748000" expanded="true" signature="7081:7094" placeholder="..." />
+                <marker date="1447688748000" expanded="true" signature="9220:9233" placeholder="..." />
+                <marker date="1447688748000" expanded="true" signature="11351:11364" placeholder="..." />
+                <marker date="1447688748000" expanded="true" signature="13482:13495" placeholder="..." />
+                <marker date="1447688748000" expanded="true" signature="15619:15632" placeholder="..." />
+                <marker date="1447688748000" expanded="true" signature="17757:17770" placeholder="..." />
+                <marker date="1447688748000" expanded="true" signature="19900:19913" placeholder="..." />
+                <marker date="1447688748000" expanded="true" signature="22047:22060" placeholder="..." />
+                <marker date="1447688748000" expanded="true" signature="24198:24211" placeholder="..." />
+                <marker date="1447688748000" expanded="true" signature="26342:26355" placeholder="..." />
+                <marker date="1447688748000" expanded="true" signature="28492:28505" placeholder="..." />
+                <marker date="1447688748000" expanded="true" signature="30642:30655" placeholder="..." />
+                <marker date="1447688748000" expanded="true" signature="32787:32800" placeholder="..." />
+                <marker date="1447688748000" expanded="true" signature="34925:34938" placeholder="..." />
+                <marker date="1447688748000" expanded="true" signature="37059:37072" placeholder="..." />
+                <marker date="1447688748000" expanded="true" signature="39197:39210" placeholder="..." />
+                <marker date="1447688748000" expanded="true" signature="41335:41348" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="initiatives.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="initiatives.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/initiatives.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.69740635" vertical-offset="431" max-vertical-offset="2310">
-              <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="885" max-vertical-offset="2310">
+              <caret line="103" column="867" selection-start-line="103" selection-start-column="857" selection-end-line="103" selection-end-column="867" />
               <folding />
             </state>
           </provider>
@@ -332,12 +176,13 @@
         <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
         <option value="$PROJECT_DIR$/resources/views/addstakeholders.php" />
         <option value="$PROJECT_DIR$/resources/views/addinitiatives.php" />
-        <option value="$PROJECT_DIR$/resources/views/initiatives.php" />
-        <option value="$PROJECT_DIR$/resources/views/stakeholders.php" />
         <option value="$PROJECT_DIR$/app/Stakeholder.php" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/app/Geocode.php" />
         <option value="$USER_HOME$/Downloads/icecat_import_index.php" />
+        <option value="$PROJECT_DIR$/resources/views/initiatives.php" />
+        <option value="$PROJECT_DIR$/public/js/initiatives.js" />
+        <option value="$PROJECT_DIR$/resources/views/stakeholders.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" />
         <option value="$PROJECT_DIR$/resources/views/mapview.php" />
       </list>
@@ -462,6 +307,60 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="storage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stakeholdermap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stakeholdermap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="storage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stakeholdermap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stakeholdermap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="storage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sessions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stakeholdermap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stakeholdermap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -495,60 +394,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stakeholdermap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stakeholdermap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stakeholdermap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stakeholdermap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stakeholdermap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stakeholdermap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -596,6 +441,9 @@
       <BehatRunner />
       <method />
     </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
@@ -603,9 +451,6 @@
       <arguments />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
@@ -644,9 +489,9 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.038135592" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.038135592" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -670,14 +515,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Geocode.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/stakeholders.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1534" max-vertical-offset="2190">
@@ -691,6 +528,24 @@
           <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
           <folding>
             <element signature="e#6#86#0#PHP" expanded="true" />
+            <marker date="1447688748000" expanded="true" signature="4880:4893" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="7081:7094" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="9220:9233" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="11351:11364" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="13482:13495" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="15619:15632" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="17757:17770" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="19900:19913" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="22047:22060" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="24198:24211" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="26342:26355" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="28492:28505" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="30642:30655" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="32787:32800" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="34925:34938" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="37059:37072" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="39197:39210" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="41335:41348" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -734,7 +589,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="510">
           <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -751,6 +605,24 @@
           <caret line="128" column="0" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
           <folding>
             <element signature="e#6#86#0#PHP" expanded="true" />
+            <marker date="1447688748000" expanded="true" signature="4880:4893" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="7081:7094" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="9220:9233" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="11351:11364" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="13482:13495" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="15619:15632" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="17757:17770" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="19900:19913" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="22047:22060" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="24198:24211" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="26342:26355" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="28492:28505" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="30642:30655" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="32787:32800" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="34925:34938" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="37059:37072" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="39197:39210" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="41335:41348" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -794,7 +666,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -811,6 +682,24 @@
           <caret line="551" column="37" selection-start-line="551" selection-start-column="37" selection-end-line="551" selection-end-column="37" />
           <folding>
             <element signature="e#6#86#0#PHP" expanded="true" />
+            <marker date="1447688748000" expanded="true" signature="4880:4893" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="7081:7094" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="9220:9233" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="11351:11364" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="13482:13495" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="15619:15632" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="17757:17770" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="19900:19913" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="22047:22060" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="24198:24211" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="26342:26355" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="28492:28505" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="30642:30655" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="32787:32800" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="34925:34938" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="37059:37072" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="39197:39210" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="41335:41348" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -984,26 +873,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/stakeholders.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1534" max-vertical-offset="2190">
-          <caret line="121" column="0" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="645" max-vertical-offset="1965">
-          <caret line="62" column="30" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1011,7 +884,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="510">
           <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="26" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1023,22 +895,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/addinitiatives.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="570" max-vertical-offset="1950">
-          <caret line="127" column="0" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/icecat_import_index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.23775215" vertical-offset="0" max-vertical-offset="1830">
           <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
-          <folding>
-            <marker date="1443451227000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1443451227000" expanded="true" signature="-1:-1" placeholder="UPDATE files..." />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="1965">
+          <caret line="62" column="30" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1050,10 +918,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/stakeholders.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="2115">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/addinitiatives.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="1950">
+          <caret line="14" column="41" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/initiatives.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="885" max-vertical-offset="2310">
+          <caret line="103" column="867" selection-start-line="103" selection-start-column="857" selection-end-line="103" selection-end-column="867" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/initiatives.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2027" max-vertical-offset="4080">
+          <caret line="221" column="52" selection-start-line="221" selection-start-column="52" selection-end-line="221" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.416667" vertical-offset="41" max-vertical-offset="735">
-          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="41" max-vertical-offset="765">
+          <caret line="25" column="50" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
           <folding>
             <element signature="e#7#392#0#PHP" expanded="true" />
           </folding>
@@ -1062,8 +962,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.2083335" vertical-offset="1276" max-vertical-offset="4485">
-          <caret line="95" column="50" selection-start-line="95" selection-start-column="50" selection-end-line="95" selection-end-column="50" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="435" max-vertical-offset="4605">
+          <caret line="53" column="63" selection-start-line="53" selection-start-column="63" selection-end-line="53" selection-end-column="63" />
           <folding>
             <element signature="e#39#58#0#PHP" expanded="true" />
           </folding>
@@ -1072,19 +972,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/mapview.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-71.31373" vertical-offset="15053" max-vertical-offset="18870">
-          <caret line="1246" column="43" selection-start-line="1246" selection-start-column="37" selection-end-line="1246" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.6700288" vertical-offset="675" max-vertical-offset="25530">
+          <caret line="76" column="40" selection-start-line="76" selection-start-column="40" selection-end-line="76" selection-end-column="40" />
           <folding>
             <element signature="e#6#86#0#PHP" expanded="true" />
+            <marker date="1447688748000" expanded="true" signature="4880:4893" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="7081:7094" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="9220:9233" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="11351:11364" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="13482:13495" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="15619:15632" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="17757:17770" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="19900:19913" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="22047:22060" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="24198:24211" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="26342:26355" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="28492:28505" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="30642:30655" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="32787:32800" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="34925:34938" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="37059:37072" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="39197:39210" placeholder="..." />
+            <marker date="1447688748000" expanded="true" signature="41335:41348" placeholder="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/initiatives.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.69740635" vertical-offset="431" max-vertical-offset="2310">
-          <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
