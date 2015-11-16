@@ -1043,7 +1043,7 @@
         </div><!-- /header-first -->
         <div id="header-middle">
         </div><!-- /header-middle -->
-        <div id="search-box">
+        <!--<div id="search-box">
             <form action="/content/open-data"  accept-charset="UTF-8" method="post" id="search-theme-form">
                 <div><div id="search" class="container-inline">
                         <div class="form-item" id="edit-search-theme-form-1-wrapper">
@@ -1056,7 +1056,7 @@
                     </div>
 
                 </div></form>
-        </div><!-- /search-box -->
+        </div>--><!-- /search-box -->
 
         <!---	<div id="authorize">
               <ul><li class="first"><a href="/user">Login</a></li><li><a href="/user/register">Register</a></li></ul>
