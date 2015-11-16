@@ -16,6 +16,8 @@
 
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
 
+    <link type="text/css" rel="stylesheet" media="all" href="http://caribbeanopeninstitute.org/sites/default/files/css/css_1b256d43852e9eb6b22ee96e11947884.css" />
+
     <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -1015,6 +1017,57 @@
 
 <body>
 
+<div id="header">
+    <div id="header-wrapper">
+        <div id="header-first">
+
+            <div class="logo">
+                <a href="/" title="Home"><img src="http://caribbeanopeninstitute.org/sites/default/files/logo.png" alt="Home"/></a>
+            </div>
+        </div><!-- /header-first -->
+        <div id="header-middle">
+        </div><!-- /header-middle -->
+        <div id="search-box">
+            <form action="/content/open-data"  accept-charset="UTF-8" method="post" id="search-theme-form">
+                <div><div id="search" class="container-inline">
+                        <div class="form-item" id="edit-search-theme-form-1-wrapper">
+                            <label for="edit-search-theme-form-1">Search this site: </label>
+                            <input type="text" maxlength="128" name="search_theme_form" id="edit-search-theme-form-1" size="15" value="" title="Enter the terms you wish to search for." class="form-text" />
+                        </div>
+                        <input type="submit" name="op" id="edit-submit" value="Search"  class="form-submit" />
+                        <input type="hidden" name="form_build_id" id="form-f974e18eb56b10c7ec6ad8ad5118de10" value="form-f974e18eb56b10c7ec6ad8ad5118de10"  />
+                        <input type="hidden" name="form_id" id="edit-search-theme-form" value="search_theme_form"  />
+                    </div>
+
+                </div></form>
+        </div><!-- /search-box -->
+
+        <!---	<div id="authorize">
+              <ul><li class="first"><a href="/user">Login</a></li><li><a href="/user/register">Register</a></li></ul>
+                </div>-->
+
+    </div><!-- /header-wrapper -->
+
+</div> <!-- /header -->
+<div style="clear:both"></div>
+<div id="menu">
+    <div id="rounded-menu-left"></div>
+    <!-- PRIMARY -->
+    <div id="nav">
+        <ul class="links"><li class="menu-123 first"><a href="/" title="">Home</a></li>
+            <li class="menu-440 active-trail active"><a href="/content/open-data" title="Open Data" class="active">Open Data</a></li>
+            <li class="menu-441"><a href="/node/16" title="Communications">Communications</a></li>
+            <li class="menu-442"><a href="/node/17" title="M&amp;E">Impact</a></li>
+            <li class="menu-443"><a href="/projects" title="Projects">Projects</a></li>
+            <li class="menu-1477"><a href="/node/12" title="About the Caribbean Open Institute">About Us</a></li>
+            <li class="menu-725 last"><a href="/contact" title="">Contact Us</a></li>
+        </ul>      </div> <!-- /primary -->
+    <div id="rounded-menu-right"></div>
+</div> <!-- end menu -->
+
+
+<div style="clear:both"></div>
+
 <div id="sidebar">
     <b>Filter by Country : </b><br>
     <input checked type="checkbox" name="country" id="jamaica" class="country-boxes">Jamaica<br>
@@ -1075,7 +1128,7 @@
 
 <link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.Default.css' rel='stylesheet' />
 
-<div id="map"></div>
+<br><div id="map" style="margin-left:20px;margin-right:20px;"></div>
 
 <script>
 
@@ -1612,7 +1665,7 @@
     //map.on('click', function () { sidebar.hide(); });
 
 </script>
-
+<!--
 <br><b><p style="display:inline;">Key : </p></b>
 
 <img src="http://www.argentmac.com/devca/icons/Emerald.png"/> Bank/Investment/Consulting&nbsp;
@@ -1632,7 +1685,7 @@
 <br><br>
 
 <a href="stakeholders">View/Add/Edit/Delete Stakeholders</a> || <a href="initiatives">View/Add/Edit/Delete Initiatives</a>
-
+-->
 <script>
 
     $(document).ready(function(){
