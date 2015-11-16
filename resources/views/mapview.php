@@ -998,6 +998,22 @@
 
         }
 
+        #header {
+
+            width:100% !important;
+            margin-left:20px;
+            margin-right:20px;
+
+        }
+
+        #menu {
+
+            width:97% !important;
+            margin-left:20px;
+            margin-right:20px;
+
+        }
+
         .leaflet-div-icon {
             background: transparent;
             border: none;
